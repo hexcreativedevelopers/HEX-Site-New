@@ -49,6 +49,13 @@ html {
   margin-bottom:20px;
  
 }
+.page-label-underline-2{
+  width:400px;
+  display:block;
+  position:absolute;
+  bottom:0; left:0;
+  border-bottom:5px solid #fff;
+}
 .page-label-underline{
   width:400px;
   display:block;
@@ -508,21 +515,20 @@ cursor:default;
   background-size: cover;
   width: 80px;
   height: 80px;
-  z-index:2;
+
   border-radius: 50%;
   cursor: pointer;
-  transition: 300ms  ease-out;
+  transition: 300ms  ease-out !important;
   /* transform:translate(-50%, -50%) translate(652px, 208px) rotateX(0deg) rotateZ(0deg) !important ; */
-  bottom:50;
+
 }
 
 .marker:hover {
   background-image: url(../img/map-marker-2-hover.svg);
   background-size: cover;
-  /* width: 100px;
-  height: 100px; */
+
   transition: 200ms  ease-in;
-  /* transform: translate(-50%, -60%) translate(652px, 208px) rotateX(0deg) rotateZ(0deg)  !important; */
+  
   border-radius: 50%;
   cursor: pointer;
 }
