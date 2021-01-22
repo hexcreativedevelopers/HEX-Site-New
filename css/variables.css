@@ -1,0 +1,13 @@
+.text-blue{
+  color:#369BD7!important;
+}
+
+
+.mt-50{
+  margin-top:auto;
+}
+@media(max-width:425px){
+  .mt-50{
+    margin-top:50%;
+  }  
+}
