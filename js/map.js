@@ -66,9 +66,9 @@ function onDocumentMouseMove(event) {
 camera();
 document.addEventListener('mousemove', onDocumentMouseMove, false);
 function camera(){
-    pitch = THREE.MathUtils.clamp(pitch,pitch+(mouseY-pitch)*0.005,45);
+    pitch = THREE.MathUtils.clamp(pitch,pitch+(mouseY-pitch)*0.005,41);
     pitch = THREE.MathUtils.clamp(pitch,pitch+(-mouseY-pitch)*0.01,45);
-    bearing = THREE.MathUtils.clamp(bearing,bearing+(mouseX-pitch)*0.003,132);
+    bearing = THREE.MathUtils.clamp(bearing,bearing+(mouseX-pitch)*0.003,130);
     bearing = THREE.MathUtils.clamp(bearing,bearing+(-mouseX-pitch)*0.003,132);
 
     
