@@ -18,6 +18,7 @@
      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
      <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@700&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <!-- map-->
      <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
      <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
@@ -38,16 +39,16 @@
  
     <!-- <nav id="dot-nav" style="top: calc(50% - 55px);">   
     </nav> -->
-    <section   class="section-colors text-center" data-color="white">
+    <section  style="margin-top:-60px;"  class="section-colors text-center" data-color="white">
       <div id="three" class="fixed-top" style="width:100vw;height:100vh; z-index:-2;"> </div>
       <div class="position-absolute text-center" style="width:100vw;height:100vh;">
-        <h2 class="main-title   title-font" >Creative Agency</h2>
+        <h2 data-aos="fade-up" class="main-title   title-font" >Creative Agency</h2>
         <h5 class="main-paragraph text-center">beyond the visuals</h5>
         <!-- <button class="border-gradient-glass text-blue px-5 glass-btn">Begin</button> -->
       </div> 
-      <div class="page-label float-left position-absolute">       
-        <h2 style="" class="ml-4 page-label-title">WE ARE</h2>
-        <div class="page-label-underline"></div>
+      <div style="overflow:hidden;" class="page-label float-left position-absolute">       
+        <h2  data-aos- data-aos="fade-up"  data-aos-duration="100" data-aos-delay="500" style="" class="ml-4 page-label-title">WE ARE</h2>
+        <div data-aos-anchor="#parent" data-aos="fade-right" class="page-label-underline"></div>
         
       </div>
     </section>
@@ -71,10 +72,10 @@
       <!-- <h5 class="main-paragraph text-right text-white">beyond the visuals</h5> -->
    
     </div>
-    <div class="page-label float-left position-absolute border-white">
-
-      <h2 style="" class="ml-4 text-white page-label-title">WE ARE</h2>
-      <div class="page-label-underline"></div>
+    <div style="overflow:hidden;" class="page-label float-left position-absolute">       
+      <h2  data-aos="fade-up"  data-aos-delay="500" style="" class="ml-4 page-label-title">WE ARE</h2>
+      <div data-aos="fade-right" data-aos-animate="" data-aos-anchor="#home" class="page-label-underline"></div>
+      
     </div>
   </section>
 <!--<section class="section-colors" data-color="blue">
@@ -93,30 +94,23 @@
       <h2 class=" title-size text-right title-font" >XCELLENCE</h2>
       <!-- <h5 class="main-paragraph text-right text-white">beyond the visuals</h5> -->
     </div>
-    <div class="page-label float-left position-absolute border-white">
-
-      <h2 style="" class="ml-4 text-white page-label-title">WE ARE</h2>
-      <div class="page-label-underline"></div>
+    <div style="overflow:hidden;" class="page-label float-left position-absolute">       
+      <h2  data-aos- data-aos="fade-up"  data-aos-duration="100" data-aos-delay="500" style="" class="ml-4 page-label-title text-white">WE ARE</h2>
+      <div data-aos="fade-right" class="page-label-underline-2"></div>
+      
     </div>
   </section>
-
- 
-  <section  style="overflow:hidden" class="justify-content-center  section-colors" data-color="projects">
+  
+  
+  <section   class="justify-content-center position-absolute section-colors" data-color="projects">
       <div  class="row">
         <div class="col-md-6  d-flex justify-content-center  ">
-          <div class="project-detail">
-            <div class="project-bg">
-              
-            </div>
+          <div onclick="openModal()" class="project-detail custom-modal-bg clipped-box " id="modal-btn" >
+    
           </div>
-          <div class="project-thumb-container">
-              <div class="project-thumb-bg">
-                <div class="project-thumb-bg-inner thumb-pusher"></div>
-              </div>
-              <img  src="img/renew-removebg-preview 1.png">
-
-          </div>
+        
         </div>
+      
         <div style="margin-top:10%;"class="col-md-6">
           <div id="scroll-container">
             <div class="wrap-container"  style=" scrollbar-width: none !important;" id="wrap-scroll">
@@ -145,14 +139,13 @@
         </div>
       </div>
     
-    <div class="page-label float-left position-absolute border-white">
-     
-      <div class="position-absolute container text-right" style="width:100vw;height:100vh;">
-       
+      <div style="overflow:hidden;" class="page-label float-left position-absolute">       
+        <h2  data-aos="fade-up"  data-aos-delay="500" style="" class="ml-4 page-label-title">WE ARE</h2>
+        <div data-aos="fade-right" class="page-label-underline"></div>
+        
       </div>
-      <h2 style="" class="ml-4 text-white page-label-title">WE HAVE</h2>
-      <div class="page-label-underline"></div>
-    </div>
+  </section>
+  <section class="custom-modal-bg ">
   </section>
 
   <section style="overflow:hidden" class="d-flex justify-content-center section-colors"  data-color="clients">
@@ -181,27 +174,29 @@
         </div>
       </div>
     </div>
-    <div class="page-label float-left position-absolute border-white">
-
-      <h2 style="" class="ml-4 text-white page-label-title">Clients</h2>
-      <div class="page-label-underline"></div>
+    <div style="overflow:hidden;" class="page-label float-left position-absolute">       
+      <h2  data-aos- data-aos="fade-up"  data-aos-duration="100" data-aos-delay="500" style="" class="text-white ml-4 page-label-title">WE ARE</h2>
+      <div data-aos="fade-right" class="page-label-underline-2"></div>
+   
     </div>
   </section> 
 
 
   <section class="d-flex section-colors mb-5" data-color="team"> 
     
-    <div class="people-info">
-      <h2 id="name">Kyaw Sithu Moe Oo</h2>
-      <h1 id="role">CFO & Co-Founder</h1>
+    <div id="people-data" class="people-info">
+      <!-- <h2 id="name">Kyaw Sithu Moe Oo</h2>
+      <h1 id="role">CFO & Co-Founder</h1> -->
     </div>
 
-    <div style="width:700px;" class="page-label float-left position-absolute border-white">
+    <div style="overflow:hidden;" class="page-label float-left position-absolute">       
+      <h2  data-aos- data-aos="fade-up"  data-aos-duration="100" data-aos-delay="500" style="" class="text-white ml-4 page-label-title">WE ARE</h2>
+      <div data-aos="fade-right" class="page-label-underline-2"></div>
       
-      <h2 style="" class="ml-4 text-white page-label-title">Team</h2>
-      <div class="page-label-underline-2"></div>
     </div>
-    <div class="team-viewer" style="width:100vw;height:100vh;"></div>
+    <div class="team-viewer"></div>
+    <div class="team-instruction">Touch to Next</div>
+    
   </section>
   
   <section class=" section-colors " data-color="contact">
@@ -236,18 +231,23 @@
 
     <div  id="map"></div>
 
-    <div style="width:700px;" class="page-label float-left position-absolute border-white">
+    <div style="overflow:hidden" class="page-label float-left position-absolute">       
+      <h2  data-aos- data-aos="fade-up"  data-aos-duration="100" data-aos-delay="500" style="" class="ml-4 page-label-title">WE ARE</h2>
+      <div data-aos-anchor="#parent" data-aos="fade-right" class="page-label-underline-2"></div>
       
-      <h2 style="" class="ml-4 text-white page-label-title">Contact us</h2>
-      <div class="page-label-underline"></div>
     </div>
   </section>
+  
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <script src="" async defer></script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/velocity.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-    <script src="js/scroll-visible.js"></script>
+    <!-- <script src="js/scroll-visible.js"></script> -->
     <script src="js/scroll-nav.js"></script>
-  <script src="scroll.js"></script>
+    <!-- <script src="scroll.js"></script> -->
+  <!--   -->
       <!-- <script>
     
 // const gra = function(min, max) {
@@ -267,10 +267,18 @@
     <!-- models -->
      <script src="node_modules/three/build/three.js"></script>
      <script src="js/map.js"></script>
-     <script src="scripts/particles-unminified-2.js"></script>
-    
+     <script src="scripts/new-particles-minified.js"></script>
+     <!-- <script src="scripts/particles-unminified-2.js"></script> -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script> 
-     
+       AOS.init(
+
+       );
+        function openModal(){
+       $('#modal-btn').addClass('circle-in');
+        $('#modal-btn').removeClass('clipped-box');
+        $
+     }
      </script>
       <script src="js/main.js"></script>
      <script type="module" src="model.js" ></script>

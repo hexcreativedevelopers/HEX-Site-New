@@ -31374,6 +31374,7 @@ and limitations under the License.
                             { name: "Hein Htet Aung", role: "Mobile Developer" },
                             { name: "Aung Khant Thaw", role: "Web Developer" },
                         ]),
+                        
                         this.initThree(),
                         this.initParticles(),
                         this.initControls();
@@ -31412,6 +31413,7 @@ and limitations under the License.
                             key: "update",
                             value: function () {
                                 var t = this.clock.getDelta();
+                                ($('.people-info').addClass('come-in'));
                                 this.particles && this.particles.update(t);
                             },
                         },
@@ -31425,10 +31427,16 @@ and limitations under the License.
                             key: "goto",
                             value: function (t) {
                                 var e = this;
-                                null == this.currSample
-                                    ? (this.particles.init(this.samples[t]), (this.name.innerHTML = this.person[t].name), (this.role.innerHTML = this.person[t].role))
+                                null == this.aSample
+                                    ? (this.particles.init(this.samples[t]),
+                                    (this.name.innerHTML = this.person[t].name), (this.role.innerHTML = this.person[t].role)
+                                    ,(	TweenMax.from("#people-data", 1, {x:"-500", ease:Sine.easeInOut}),	
+                                    TweenMax.to("#people-data", 1, {x:"0", ease:Sine.easeInOut}))
+                                    )
                                     : this.particles.hide(!0).then(function () {
-                                          e.particles.init(e.samples[t]), (e.name.innerHTML = e.person[t].name), (e.role.innerHTML = e.person[t].role);
+                                          e.particles.init(e.samples[t]), (e.name.innerHTML = e.person[t].name), (e.role.innerHTML = e.person[t].role)
+                                          TweenMax.from("#people-data", 1, {x:"-500", ease:Sine.easeInOut});	
+                                          TweenMax.to("#people-data", 1, {x:"0", ease:Sine.easeInOut});
                                       }),
                                     (this.currSample = t);
                             },

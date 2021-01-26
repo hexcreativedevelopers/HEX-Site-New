@@ -47,6 +47,7 @@ win.scroll(function(event) {
     if (el.visible(true)) {
       underline.addClass("come-in-underline");
       el.addClass("come-in"); 
+      
       contactus.addClass("come-in");
     } 
   });
