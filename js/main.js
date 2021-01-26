@@ -221,3 +221,29 @@ TweenMax.to(".team-instruction", 1, { opacity:0,repeat:-1,yoyo:true,alpha:true }
 //      $('#modal-btn').removeClass('clipped-box');
 //      $
 //   }
+
+var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
+var closeButton = document.querySelector("#close-button");
+var openButton = document.querySelector("#open-button");
+
+closeButton.addEventListener("click", function() {
+  $('#open-button').removeClass('circle-in');
+  $('#open-button').addClass('circle-out');
+    $('#open-button').addClass('clipped-box');
+    $('#open-button').removeClass('circle-out');
+  modal.classList.toggle("closed");
+});
+
+openButton.addEventListener("click", function() {
+  $('#open-button').addClass('circle-in');
+    $('#open-button').removeClass('clipped-box');
+    modal.classList.toggle("closed");
+   
+ 
+  modalOverlay.classList.toggle("closed");
+});
+
+
+}
+

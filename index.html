@@ -11,7 +11,7 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="https://bundle.run/css-scroll-snap-polyfill@0.1.2.css">
@@ -50,7 +50,19 @@
 </head>
 
 <body>
+  <section>
 
+    
+  </section>
+  <div class="modal closed" id="modal">
+    <button class="close-button" id="close-button">Obvious Close Button</button>
+    <div class="modal-guts">
+      <h1>Modal Example</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita corrupti laudantium aperiam, doloremque explicabo ipsum earum dicta saepe delectus totam vitae ipsam doloribus et obcaecati facilis eius assumenda, cumque.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita corrupti laudantium aperiam, doloremque explicabo ipsum earum dicta saepe delectus totam vitae ipsam doloribus et obcaecati facilis eius assumenda, cumque.</p>
+      i
+    </div>
+  </div> 
   <nav class="navbar ml-4 fixed-top navbar-expand-lg navbar-light
       bg-transparent">
     <a class="navbar-brand" href="#"><img src="img/logo.png" width="150px"
@@ -126,42 +138,57 @@
 
     </div>
   </section>
-
-  <section class="row">
-
-  </section>
-  <!-- <div onclick="openModal()" class=" project-modal-bg  clipped-box " id="modal-btn" >
-      <div class="container">
-        abcd
+  
+  <!-- <div class="project modal">
+    <div class=" project-modal-bg  " id="modal-btn" >
+      <div style="width:50%; padding:20px;">
+        <img src="img/renew-removebg-preview 1.png" style="top:20%;">
+      
       </div>
-    </div> -->
-  <section class="justify-content-center section-colors" data-color="projects">
-    <div class="row">
-      <div class="col-md-6 d-flex justify-content-center">
-        <div class=" mt-5">
-          <div class="slider-for">
-            <div>
-              <h3>hi</h3>
-            </div>
-            <div>
-              <h3>a</h3>
-            </div>
-            <div>
-              <h3>m</h3>
-            </div>
-            <div>
-              <h3>i'm</h3>
-            </div>
-            <div>
-              <h3>b</h3>
-            </div>
+      <div style="width:50%;padding:20px;">
+        
+      </div>
+      <div class="container d-flex">
+        <div class="row">
+          <div class="col-md-6">
+            
+          </div>
+          <div class="col-md-6">
+            <h3 class="position-absolute text-black" style="top:20%;">ABCD</h3>
           </div>
         </div>
-
-
-        <div class="project-thumb-container">
-        </div>
       </div>
+    
+    </div>
+
+  </div> -->
+       
+  <section class="justify-content-center section-colors" data-color="projects">
+      <div class="slider-for">
+        <div>
+          <h3>hi</h3>
+        </div>
+        <div>
+          <h3>a</h3>
+        </div>
+        <div>
+          <h3>m</h3>
+        </div>
+        <div>
+          <h3>i'm</h3>
+        </div>
+        <div>
+          <h3>b</h3>
+        </div>
+    </div>
+    <div class="row">
+      <div id="open-button" class="clipped-box custom-modal-bg"></div>
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class=" mt-5">
+          </div>
+      </div>
+
+
 
       <div style="margin-top:10%;" class="col-md-6">
         <div id="scroll-container">
@@ -207,7 +234,7 @@
 
     <div style="overflow:hidden;" class="page-label float-left
               position-absolute">
-      <h2 data-aos="fade-up" data-aos-delay="500" style="" class="ml-4
+      <h2 data-aos="fade-up" data-aos-delay="500"  class="ml-4
                 page-label-title">WE ARE</h2>
       <div data-aos="fade-right" class="page-label-underline"></div>
     </div>
@@ -313,10 +340,8 @@
 
     <div id="map"></div>
 
-    <div style="overflow:hidden" class="page-label float-left
-                  position-absolute">
-      <h2 data-aos- data-aos="fade-up" data-aos-duration="100" data-aos-delay="500" style=""
-        class="ml-4 page-label-title">WE
+    <div style="" class="page-label float-left  position-absolute">
+      <h2 data-aos- data-aos="fade-up" data-aos-duration="100" data-aos-delay="500" class="ml-4 page-label-title">WE
         ARE</h2>
       <div data-aos-anchor="#parent" data-aos="fade-right" class="page-label-underline-2"></div>
 
@@ -384,11 +409,34 @@
   
     // });
 
+    var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
+var closeButton = document.querySelector("#close-button");
+var openButton = document.querySelector("#open-button");
+
+closeButton.addEventListener("click", function() {
+  $('#open-button').removeClass('circle-in');
+  $('#open-button').addClass('circle-out');
+    $('#open-button').addClass('clipped-box');
+    $('#open-button').removeClass('circle-out');
+  modal.classList.toggle("closed");
+});
+
+openButton.addEventListener("click", function() {
+  $('#open-button').addClass('circle-in');
+    $('#open-button').removeClass('clipped-box');
+    modal.classList.toggle("closed");
+   
+ 
+  modalOverlay.classList.toggle("closed");
+});
+
     $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
+  
   asNavFor: '.slider-nav'
 });
      $('.slider-nav').slick({
@@ -397,8 +445,12 @@
   asNavFor: '.slider-for',
   dots: false,
   vertical:true,
+  verticalSwiping:true,
   centerMode: true,
   focusOnSelect: true,
+  prevArrow: false,
+    nextArrow: false,
+    infinite:true,
   responsive: [
     {
       breakpoint: 768,
@@ -440,7 +492,7 @@
     }
   </script>
   <script src="js/main.js"></script>
-  <script type="module" src="model.js"></script>
+  <!-- <script type="module" src="model.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/css-scroll-snap-polyfill@0.1.2/dist/css-scroll-snap-polyfill.umd.min.js">
   </script>
 </body>

@@ -738,7 +738,7 @@ header h1 {
   line-height: 1.6;
   margin: 2em 0;
 }
-.modal-is-visible .cd-modal {
+.test-modal-is-visible .cd-modal {
   z-index: 1;
   visibility: visible;
   opacity: 1;
@@ -747,7 +747,7 @@ header h1 {
   -moz-transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
   transition: visibility 0s 0s, opacity 0.3s 0s, z-index 0s 0s;
 }
-.modal-is-visible .cd-modal .cd-modal-content {
+.test-modal-is-visible .cd-modal .cd-modal-content {
   -webkit-overflow-scrolling: touch;
 }
 @media only screen and (min-width: 768px) {
@@ -871,7 +871,7 @@ header h1 {
 .no-touch .cd-modal-close:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.modal-is-visible .cd-modal-close {
+.test-modal-is-visible .cd-modal-close {
   visibility: visible;
   opacity: 1;
   -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
@@ -895,7 +895,7 @@ header h1 {
 
 
 
-.modal {
+.test-modal {
   position: absolute;
   top: 0;
   left: 0;
@@ -914,7 +914,7 @@ header h1 {
   align-items: center;
 }
 
-.modal__content {
+.test-modal__content {
   opacity: 0;
   transform: translate3D(0, -1em, 0);
   transition: opacity 0.1s 0s, transform 0.3s 0s;
@@ -937,7 +937,10 @@ button {
 }
 
 .circle-in{
-  animation: circle 500ms;
+  animation: circle 800ms;
+}
+.circle-out{
+  animation: circle-out 800ms;
 }
 .box,.clipped-box {
   /* animation: circle 3s infinite; */
@@ -958,9 +961,21 @@ button {
   width: 100vw;
 }
 
+.clipped-box{
+  left:0;
+  bottom:0;
+  z-index:99999;
+  /* background-image: url(../img/bg.jpg); */
+  clip-path: circle(10% at center);
+  height:100vh;
+  position:absolute;
+  width: 100vw;
+}
+
+
 .custom-modal-bg{
   /* overflow:hidden; */
-  position:   absolute;
+  position:absolute;
   overflow:hidden !important;
   padding:20px;
   margin-left:-20px;
@@ -968,20 +983,23 @@ button {
    background-position:center;
    background-size:cover;
   width:100vw;
-  overflow:hidden;
-  z-index:99999;
   height:100vh;
+  overflow:hidden;
+  
+  z-index:99;
+  transform:circle(50%);
 }
 .project-modal-bg{
-  overflow:hidden;
+  overflow:hidden !important;
   width:100vw;
-  z-index:9999;
+  z-index:99;
   height:100vh;
   position:relative;
+  display:flex;
   background:url(../img/bg.jpg);
   background-size: auto 100%;
   background-position:center center;
-  transform: scale3d(2.2, 2.2, 2.2);  
+  transform: scale3d(1.1, 1.1, 1.1);  
 }
 .project-page{
   position: absolute;
@@ -993,21 +1011,28 @@ button {
 }
 
 @keyframes circle {
-  0% { clip-path: circle(15% at 250px 300px); }
+  0% { clip-path: circle(15% at center); }
   /* 25% { clip-path: circle(25% at 250px 300px); }
   50% { clip-path: circle(50% at 250px 300px); }
   75% {clip-path:circle(75% at 250px 300px);} */
-  100% { clip-path: circle(100% at  250px 300px); }
+  100% { clip-path: circle(100% at  center); }
+}
+@keyframes circleou {
+  0% { clip-path: circle(100% at 250px 300px); }
+  /* 25% { clip-path: circle(25% at 250px 300px); }
+  50% { clip-path: circle(50% at 250px 300px); }
+  75% {clip-path:circle(75% at 250px 300px);} */
+  100% { clip-path: circle(15% at  250px 300px); }
 }
 button:active {
   outline: none;
   opacity: 0;
 }
-button:active ~ .modal {
+button:active ~ .test-modal {
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 }
-button:active ~ .modal .modal__content {
+button:active ~ .test-modal .test-modal__content {
   opacity: 1;
   transform: translate3D(0, 1em, 0);
   transition: opacity 0.3s 0.2s, transform 0.6s 0.2s cubic-bezier(0, 0.65, 0.06, 0.98);
