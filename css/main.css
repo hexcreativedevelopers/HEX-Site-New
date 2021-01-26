@@ -561,6 +561,7 @@ cursor:default;
   border-radius: 50%;
   cursor: pointer;
   transition: 300ms  ease-out !important;
+  
   /* transform:translate(-50%, -50%) translate(652px, 208px) rotateX(0deg) rotateZ(0deg) !important ; */
 
 }
@@ -570,7 +571,7 @@ cursor:default;
   background-size: cover;
 
   transition: 200ms  ease-in;
-  
+  z-index: 999;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -579,7 +580,7 @@ cursor:default;
   font-family: 'Lexend Giga', sans-serif;
   font-weight:bold;
   font-size:27px;
-  z-index:888 !important;
+  /* z-index:888 !important; */
   align-items: center;
   /* border: 1px solid #FFFFFF; */
 }
