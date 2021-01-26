@@ -80,7 +80,7 @@ html {
 body {
   /* position:fixed; */
 	overflow-x:hidden !important;
-  overflow-y:auto;
+  overflow-y:auto;  
   color: #000;
   /* overflow-y: -moz-hidden-unscrollable; */
   -ms-overflow-style: none; /* IE 11 */
@@ -974,7 +974,7 @@ button {
   /* 25% { clip-path: circle(25% at 250px 300px); }
   50% { clip-path: circle(50% at 250px 300px); }
   75% {clip-path:circle(75% at 250px 300px);} */
-  100% { clip-path: circle(100% at 250px 300px); }
+  100% { clip-path: circle(100% at  250px 300px); }
 }
 button:active {
   outline: none;
@@ -1006,4 +1006,9 @@ button:active ~ .modal .modal__content {
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+
+.visible-none{
+visibility: hidden;
 }

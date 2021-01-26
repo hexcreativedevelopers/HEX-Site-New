@@ -35,23 +35,23 @@ function scrollWrap() {
         itemsScrolled = 0;
         window.CP.exitedLoop(1);
     }
-}
-function initItems(scrollSmooth) {
-    listOpts.items = [].slice.call(scrollUl.querySelectorAll('li'));
-    listOpts.itemHeight = listOpts.items[0].clientHeight;
-    listOpts.itemCount = listOpts.items.length;
-    if (!itemsMax) {
-        itemsMax = listOpts.itemCount;
-    }
-    if (scrollSmooth) {
-        var seamLessScrollPoint = (itemsMax - 3) * listOpts.itemHeight;
-        scrollW.scrollTop = seamLessScrollPoint;
-    }
-}
-document.addEventListener('DOMContentLoaded', function (event) {
-    initItems();
-    scrollW.onscroll = scrollWrap;
-});
+// }
+// function initItems(scrollSmooth) {
+//     listOpts.items = [].slice.call(scrollUl.querySelectorAll('li'));
+//     listOpts.itemHeight = listOpts.items[0].clientHeight;
+//     listOpts.itemCount = listOpts.items.length;
+//     if (!itemsMax) {
+//         itemsMax = listOpts.itemCount;
+//     }
+//     if (scrollSmooth) {
+//         var seamLessScrollPoint = (itemsMax - 3) * listOpts.itemHeight;
+//         scrollW.scrollTop = seamLessScrollPoint;
+//     }
+// }
+// document.addEventListener('DOMContentLoaded', function (event) {
+//     initItems();
+//     scrollW.onscroll = scrollWrap;
+// });
 
 
 
@@ -207,8 +207,8 @@ TweenMax.to(".team-instruction", 1, { opacity:0,repeat:-1,yoyo:true,alpha:true }
 // };
 
 
-function openModal(){
-    $('#modal-btn').addClass('circle-in');
-     $('#modal-btn').removeClass('clipped-box');
-     $
-  }
+// function openModal(){
+//     $('#modal-btn').addClass('circle-in');
+//      $('#modal-btn').removeClass('clipped-box');
+//      $
+//   }
