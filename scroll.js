@@ -62,7 +62,7 @@
         $("html, body").animate(
           {
             scrollTop: offsetTop
-          },
+          },    
           1000,
           stopAnimation
         );

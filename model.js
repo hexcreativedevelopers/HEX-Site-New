@@ -3,17 +3,13 @@ import{
   GLTFLoader
 }from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
-import{
-  DRACOLoader
-}from './node_modules/three/examples/jsm/loaders/DRACOLoader.js';
-
 let camera, scene, renderer;
 let container, stats;
 let mouseX = 0, mouseY = 0;
 
 let windowHalfX = window.innerWidth / 2;
 let windowHalfY = window.innerHeight / 2;
-let controls;
+
 
 let hemiLight, hemiColor = 0xff00ff;
 let objectA, objectB;

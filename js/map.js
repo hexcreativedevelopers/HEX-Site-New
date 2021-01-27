@@ -1,17 +1,20 @@
+import * as THREE from '../node_modules/three/build/three.module.js';
 let mouseX = 0, mouseY = 0;
 let windowHalfX = window.innerWidth / 2;
 let windowHalfY = window.innerHeight / 2;
 
 let bearing = 131.79;
 let pitch = 44.92;
+
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmxpbmR2b2lkIiwiYSI6ImNqanM1MnA5MDI5NDYza3JzdmpkYXVhNzYifQ.izoV5MkYIGEtG1WSujkABA';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/blindvoid/ckk828mvb0ylg17qu5ndmfjvx',
     center: [96.122798, 16.817334],
     zoom: 18.79,
-    bearing: 131.79,
-    pitch: 44.92
+    bearing: bearing,
+    pitch: pitch
 });
 map.dragRotate.disable();
 map.touchZoomRotate.disableRotation();
@@ -63,8 +66,15 @@ function onDocumentMouseMove(event) {
 camera();
 document.addEventListener('mousemove', onDocumentMouseMove, false);
 function camera(){
-    pitch +=(mouseY - pitch) * .0005;
-    bearing += (-mouseX - bearing) * .0001;
+    pitch = THREE.MathUtils.clamp(pitch,pitch+(mouseY-pitch)*0.005,41);
+    pitch = THREE.MathUtils.clamp(pitch,pitch+(-mouseY-pitch)*0.01,45);
+    bearing = THREE.MathUtils.clamp(bearing,bearing+(mouseX-pitch)*0.003,130);
+    bearing = THREE.MathUtils.clamp(bearing,bearing+(-mouseX-pitch)*0.003,132);
+
+    
+    // pitch +=(mouseY - pitch) * .0005;
+    // bearing += (-mouseX - bearing) * .0001;
+
     map.jumpTo({
         pitch: pitch,
         bearing:bearing

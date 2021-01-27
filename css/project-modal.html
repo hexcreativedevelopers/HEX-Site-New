@@ -12,26 +12,47 @@
     </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="modal.css">
+    <!-- <link rel="stylesheet" href="modal.css"> -->
     <link rel="stylesheet" href="main.css">
+    <script src="../js/modernizr.js"></script> <!-- Modernizr -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+       
+    </style>
   </head>
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-   
-    <!-- <div class="clipped-box custom-modal-bg" ></div> -->
-    <!-- <div id="modal-btn"  onclick="openModal()"  style="postion:relative;" class=" custom-modal-bg clipped-box ">
-    </div> -->
-      <section>
-      
-          <div id="open-button" class=" clipped-box custom-modal-bg"></div>      
-
+    
+    <section class="cd-section">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsum repudiandae sequi ut optio reiciendis consectetur, cum, a provident, iusto quod esse, perferendis iure iste! Quidem itaque, exercitationem aliquam, mollitia recusandae repellat dolores quibusdam minima quae reprehenderit ut, reiciendis officia.
+      </p>
+  
+      <div class="cd-modal-action">
+        <a href="#0" class="  " data-type="modal-trigger">Fire Modal Window</a>
+        <span class="cd-modal-bg"></span>
+      </div> <!-- cd-modal-action -->
+  
+      <div class="cd-modal">
+        <div class="cd-modal-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+          </p>
+  
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+          </p>
+  
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad modi repellendus, optio eveniet eligendi molestiae? Fugiat, temporibus! A rerum pariatur neque laborum earum, illum voluptatibus eum voluptatem fugiat, porro animi tempora? Sit harum nulla, nesciunt molestias, iusto aliquam aperiam est qui possimus reprehenderit ipsam ea aut assumenda inventore iste! Animi quaerat facere repudiandae earum quisquam accusamus tempora, delectus nesciunt, provident quae aliquam, voluptatum beatae quis similique in maiores repellat eligendi voluptas veniam optio illum vero! Eius, dignissimos esse eligendi veniam.
+          </p>
+        </div> <!-- cd-modal-content -->
+      </div> <!-- cd-modal -->
+  
+      <a href="#0" class="cd-modal-close">Close</a>
     </section>
     <!-- <div class="modal-overlay" id="modal-overlay"></div> -->
 
-    <div class="modal closed" id="modal">
+    <!-- <div class="modal closed" id="modal">
       <button class="close-button" id="close-button">Obvious Close Button</button>
       <div class="modal-guts">
         <h1>Modal Example</h1>
@@ -39,14 +60,16 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita corrupti laudantium aperiam, doloremque explicabo ipsum earum dicta saepe delectus totam vitae ipsam doloribus et obcaecati facilis eius assumenda, cumque.</p>
         
       </div>
-    </div> 
+    </div>  -->
     <!-- <div  class=" clipped-box"></div> -->
     
     <script src="" async defer></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+ 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="../js/main.js"></script>
+    
     <script>
     //  function openModal(){
     //    $('#modal-btn').addClass('circle-in');
@@ -100,33 +123,36 @@
     }
   ]
 });
-var modal = document.querySelector("#modal");
-var modalOverlay = document.querySelector("#modal-overlay");
-var closeButton = document.querySelector("#close-button");
-var openButton = document.querySelector("#open-button");
+// var modal = document.querySelector("#modal");
+// var modalOverlay = document.querySelector("#modal-overlay");
+// var closeButton = document.querySelector("#close-button");
+// var openButton = document.querySelector("#open-button");
 
-closeButton.addEventListener("click", function() {
-  $('#open-button').removeClass('circle-in');
-  $('#open-button').addClass('circle-out');
-    $('#open-button').addClass('clipped-box');
-    $('#open-button').removeClass('circle-out');
-  modal.classList.toggle("closed");
-});
+// closeButton.addEventListener("click", function() {
+//   $('#open-button').removeClass('circle-in');
+//   $('#open-button').addClass('circle-out');
+//     $('#open-button').addClass('clipped-box');
+//     $('#open-button').removeClass('circle-out');
+//   modal.classList.toggle("closed");
+// });
 
-openButton.addEventListener("click", function() {
-  $('#open-button').addClass('circle-in');
-    $('#open-button').removeClass('clipped-box');
-    modal.classList.toggle("closed");
-   
+// openButton.addEventListener("click", function() {
+//   $('#open-button').addClass('circle-in');
+//   $('#open-button').removeClass('clipped-box');
+//   modal.classList.toggle("closed");
+  
+//   console.log('opened');
  
-  modalOverlay.classList.toggle("closed");
-});
-function openModal() {
-      $('#modal-btn').addClass('circle-in');
-      $('#modal-btn').removeClass('clipped-box');
+//   modalOverlay.classList.toggle("closed");
+// });
+// function openModal() {
+//       $('#modal-btn').addClass('circle-in');
+//       $('#modal-btn').removeClass('clipped-box');
     
-    }
+//     }
     </script>
-     
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/velocity.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

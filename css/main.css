@@ -561,6 +561,7 @@ cursor:default;
   border-radius: 50%;
   cursor: pointer;
   transition: 300ms  ease-out !important;
+  
   /* transform:translate(-50%, -50%) translate(652px, 208px) rotateX(0deg) rotateZ(0deg) !important ; */
 
 }
@@ -570,7 +571,7 @@ cursor:default;
   background-size: cover;
 
   transition: 200ms  ease-in;
-  
+  z-index: 999;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -579,7 +580,7 @@ cursor:default;
   font-family: 'Lexend Giga', sans-serif;
   font-weight:bold;
   font-size:27px;
-  z-index:888 !important;
+  /* z-index:888 !important; */
   align-items: center;
   /* border: 1px solid #FFFFFF; */
 }
@@ -784,6 +785,7 @@ header h1 {
   display: inline-block;
   height: 100%;
   width:100%;
+  z-index:9999;
   background-image: url(../img/bg.jpg);
   background-size:cover;
   background-repeat:no-repeat;
@@ -944,18 +946,18 @@ button {
 }
 .box,.clipped-box {
   /* animation: circle 3s infinite; */
-  background: orange;
+  /* background: orange;
   background: url(../img/bg.jpg);
   clip-path: circle(20%);
   height:1000vh;
-  width: 1000vw;
+  width: 1000vw; */
 }
 .clipped-box{
   left:0;
   bottom:0;
   z-index:99999;
   /* background-image: url(../img/bg.jpg); */
-  clip-path: circle(10% at 600px 500px);
+  clip-path: circle(40% at 600px 550px);
   height:100vh;
   position:absolute;
   width: 100vw;
@@ -966,23 +968,34 @@ button {
   bottom:0;
   z-index:99999;
   /* background-image: url(../img/bg.jpg); */
-  clip-path: circle(10% at center);
+  clip-path: circle(10% at 350px 200px);
   height:100vh;
   position:absolute;
   width: 100vw;
 }
 
+.project-title{
+font-family: 'Lexend Giga',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 50.1988px;
+line-height: 28px;
+top:50;
+color: #FFFFFF;
+}
 
-.custom-modal-bg{
+.custom-modal-bg,.custom-modal-bg-2,.custom-modal-bg-3{
   /* overflow:hidden; */
   position:absolute;
   overflow:hidden !important;
-  padding:20px;
-  margin-left:-20px;
-  background-image: url(../img/bg.jpg);
+  padding:20px; 
+  z-index:999;
+  /* margin-left:-20px; */
+  /* background-image: url(../img/bg.jpg); */
    background-position:center;
    background-size:cover;
   width:100vw;
+  transform:scale(1.1);
   height:100vh;
   overflow:hidden;
   
