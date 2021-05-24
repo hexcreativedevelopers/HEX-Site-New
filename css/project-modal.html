@@ -21,7 +21,19 @@
     </style>
   </head>
   <body>
-    
+    <div class="carousel-for">
+      <div class="carousel-holder">a</div>
+      <div class="carousel-holder">b</div>
+      <div class="carousel-holder">c</div>
+      <div class="carousel-holder">d</div>
+
+    </div>
+    <div class="carousel-nav">
+      <div class="carousel-holder">a</div>
+      <div class="carousel-holder">b</div>
+      <div class="carousel-holder">c</div>
+      <div class="carousel-holder">d</div>
+    </div>
     <section class="cd-section">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ipsum repudiandae sequi ut optio reiciendis consectetur, cum, a provident, iusto quod esse, perferendis iure iste! Quidem itaque, exercitationem aliquam, mollitia recusandae repellat dolores quibusdam minima quae reprehenderit ut, reiciendis officia.
@@ -76,52 +88,68 @@
     //     $('#modal-btn').removeClass('clipped-box');
     //     $
     //  }
-    $('.slider-for').slick({
+//     $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: false,
+//   fade: true,
+//   asNavFor: '.slider-nav'
+// });
+//      $('.slider-nav').slick({
+//       slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-for',
+//   dots: false,
+//   vertical:true,
+//   centerMode: true,
+//   infinite:true,
+//   verticalSwiping:true,
+//   focusOnSelect: true,
+//   responsive: [
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     },
+//     {
+//       breakpoint: 1440,
+//       settings: {
+//         arrows: true,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 4
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         arrows: false,
+//         centerMode: true,
+//         centerPadding: '40px',
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+$('.carousel-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.carousel-nav'
 });
-     $('.slider-nav').slick({
-      slidesToShow: 3,
+$('.carousel-nav').slick({
+  slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
+  asNavFor: '.carousel-for',
   dots: false,
-  vertical:true,
-  centerMode: true,
   infinite:true,
-  verticalSwiping:true,
-  focusOnSelect: true,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    },
-    {
-      breakpoint: 1440,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 4
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+  centerMode: true,
+  focusOnSelect: true
 });
 // var modal = document.querySelector("#modal");
 // var modalOverlay = document.querySelector("#modal-overlay");

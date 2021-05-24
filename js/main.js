@@ -1,5 +1,9 @@
 //infinite-scroll
-
+import {Curtains, Plane} from 'curtainsjs';
+const curtains = new Curtains({
+    container: "canvas"
+    });
+    const plane = new Plane(curtains, document.getElementsByClassName("curtain-bg"));
 var scrollW = document.getElementById('wrap-scroll');
 var scrollUl = document.getElementById('ul-scroll');
 var itemsScrolled, itemsMax, cloned = false;
@@ -107,7 +111,13 @@ teaminstruction.play();
 TweenMax.to(".team-instruction", 1, { opacity:0,repeat:-1,yoyo:true,alpha:true });
 
 
+var project_popup = new TimelineMax();
 
+TweenMax.to(".project_popup",1,{opacity:1,repeat:-1,});
+TweenMax.to(".project_popup",1,{opacity:1,repeat:-1,});
+
+
+var popup =new TimelineMax();
 
 
 //page label animation
@@ -120,6 +130,7 @@ TweenMax.to(".team-instruction", 1, { opacity:0,repeat:-1,yoyo:true,alpha:true }
 
 // init controller
 // 
+
 
 
 
@@ -196,15 +207,7 @@ jQuery(document).ready(function($){
 		}, 0);
 	}
 
-	function closeModal() {
-		var section = $('.cd-section.modal-is-visible');
-		section.removeClass('modal-is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-			animateLayer(section.find('.cd-modal-bg'), 1, false);
-		});
-		//if browser doesn't support transitions...
-		if(section.parents('.no-csstransitions').length > 0 ) animateLayer(section.find('.cd-modal-bg'), 1, false);
-	}
-});
+
 
 
 // function scaleBG(){
@@ -218,28 +221,56 @@ jQuery(document).ready(function($){
 //      $
 //   }
 
-var modal = document.querySelector("#modal");
-var modalOverlay = document.querySelector("#modal-overlay");
-var closeButton = document.querySelector("#close-button");
-var openButton = document.querySelector("#open-button");
+// var modal = document.querySelector("#modal");
+// var modalOverlay = document.querySelector("#modal-overlay");
+// var closeButton = document.querySelector("#close-button");
+// var openButton = document.querySelector("#open-button");
 
-closeButton.addEventListener("click", function() {
-  $('#open-button').removeClass('circle-in');
-  $('#open-button').addClass('circle-out');
-    $('#open-button').addClass('clipped-box');
-    $('#open-button').removeClass('circle-out');
-  modal.classList.toggle("closed");
-});
+// closeButton.addEventListener("click", function() {
+//   $('#open-button').removeClass('circle-in');
+//   $('#open-button').addClass('circle-out');
+//     $('#open-button').addClass('clipped-box');
+//     $('#open-button').removeClass('circle-out');
+//   modal.classList.toggle("closed");
+// });
 
-openButton.addEventListener("click", function() {
-  $('#open-button').addClass('circle-in');
-    $('#open-button').removeClass('clipped-box');
-    $('body').css("overflow","hidden !important");
-    modal.classList.toggle("closed");
+// openButton.addEventListener("click", function() {
+//   $('#open-button').addClass('circle-in');
+//     $('#open-button').removeClass('clipped-box');
+//     $('body').css("overflow","hidden !important");
+//     modal.classList.toggle("closed");
    
  
-  modalOverlay.classList.toggle("closed");
-});
+//   modalOverlay.classList.toggle("closed");
+// });
+TweenMax.set(".project_popup",{autoAlpha:0});
 
-
+$('.project-link').hover(
+	TweenMax.to(".project_popup", 3, {
+		x: 500,
+		scale: .8,
+		ease: Elastic.easeOut,
+		autoAlpha:1,
+	}),
+	function(){ $(this).addClass('active') },
+	function(){ $(this).removeClass('active') }
+)
+const showDialog = () => {
+  document.getElementById('dialog').classList.add('show')
+  const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  const body = document.body;
+  body.style.position = 'fixed';
+  body.style.top = `-${scrollY}`;
+};
+const closeDialog = () => {
+  const body = document.body;
+  const scrollY = body.style.top;
+  body.style.position = '';
+  body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  document.getElementById('dialog').classList.remove('show');
 }
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
+// }
