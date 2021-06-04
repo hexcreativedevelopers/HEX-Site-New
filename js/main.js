@@ -132,7 +132,338 @@ var popup =new TimelineMax();
 // 
 
 
+tl = new TimelineMax();
+// $.scrollify({
+// 				section : ".page-panel",
+// 				easing: "easeOutExpo",
+// 				 scrollSpeed: 1500,
+// 				 offset : 0,
+// scrollbars: true,
+// standardScrollElements: "",
+// setHeights: true,
+// overflowScroll: false,
+// updateHash: true,
+// touchScroll:true,
+// before:function() {},
+// after:function() {},
+// afterResize:function() {},
+// afterRender:function() {}
+// 			});
+$('.slider-for').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	fade: true,
+	centerMode:false,
+	asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	asNavFor: '.slider-for',
+	dots: false,
+	vertical: true,
+	verticalSwiping: true,
+	centerMode: true,
+	focusOnSelect: true,
+	prevArrow: false,
+	nextArrow: false,
+	infinite: true,
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 1
+			}
+		},
+		{
+			breakpoint: 1440,
+			settings: {
+				arrows: true,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 4
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: false,
+				centerMode: true,
+				centerPadding: '40px',
+				slidesToShow: 3
+			}
+		}
+	]
+});
+//for slider mobile 
+$('.mobile-slider').slick({
+centerMode: true,
+centerPadding: '60px',
+slidesToShow: 1,
+infinite:false,
 
+responsive: [
+{
+	breakpoint: 768,
+	settings: {
+		arrows: false,
+		centerMode: true,
+		centerPadding: '40px',
+		slidesToShow: 3
+	}
+},
+{
+	breakpoint: 480,
+	settings: {
+		arrows: false,
+		centerMode: true,
+		centerPadding: '40px',
+		slidesToShow: 1
+	}
+}
+]
+});
+
+
+$('.slider-quotes').slick({
+	prevArrow:false,
+	nextArrow:false,
+	centerMode: true,
+	autoplay:true,
+	focusOnSelect: true,
+	fade: true,
+	speed:true
+
+});
+var popup = documnt.querySelector("#openpopup");
+poup.addEventListener("click",function(){
+
+	console.log('opened');
+})
+function openpopup(){
+	console.log("opened");
+	$("#popup").removeClass('popup-out');
+	// $(".bg-image").style.visibility="hidden";
+ 
+	$("#popup").addClass('show');
+	$("#popup").addClass('popup-in');
+	$("body").addClass("overflow-hidden");
+	$("#bg-image").addClass('hide-image');
+ 
+
+	$("#popup-text").addClass('text-anim');
+	$("#popup-detail").addClass('detail-anim');
+	$("#popup-detail-2").addClass('detail-anim-2');
+	$("#popup-detail-3").addClass('detail-anim-3');
+//   tl.to(
+//   ".project-image",
+//   0.4,
+//   {
+//     css:{ scale:'+=.1' },
+//     ease: Power2.ease,
+//   },
+// );
+	// $("body").addClass('position-fixed');
+	$("#popup").style.display="block";
+	if(  $(".bg-image").style.opacity="0"){
+	 console.log('hidden');
+	}
+
+}; 
+function openmobilepopup(){
+	console.log("opened");
+	$("#popup-mobile").removeClass('popup-out-mobile');
+	// $(".bg-image").style.visibility="hidden";
+ $("#project-title-mobile").addClass('hide');
+ $(".project-2").addClass('hide');
+$(".project-3").addClass('hide');
+//  $(".targetClass").not(this).addClass('hide');
+	$("#popup-mobile").addClass('show');
+	$("#popup-mobile").addClass('popup-in-mobile');
+	$("body").addClass("h-100 overflow-hidden");
+	$("#bg-image-mobile").addClass('hide-image');
+	$("#popup-text").addClass('text-anim');
+	$("#popup-detail").addClass('detail-anim');
+	$("#popup-detail-2").addClass('detail-anim-2');
+	$("#popup-detail-3").addClass('detail-anim-3');
+	// $("body").addClass('position-fixed');
+	$("#popup-mobile").style.display="block";
+	if(  $(".bg-image-mobile").style.opacity="0"){
+	 console.log('hidden');
+	}
+
+};
+function openmobilepopup2(){
+	console.log("opened");
+	$("#popup-mobile2").removeClass('popup-out-mobile');
+	// $(".bg-image").style.visibility="hidden";
+ $("#project-title-mobile2").addClass('hide');
+ $(".project-1").addClass('hide');
+$(".project-3").addClass('hide');
+	$("#popup-mobile2").addClass('show');
+	$("#popup-mobile2").addClass('popup-in-mobile');
+	$("body").addClass("h-100 overflow-hidden");
+	$("#bg-image-mobile2").addClass('hide-image');
+	$("#popup-text").addClass('text-anim');
+	$("#popup-detail").addClass('detail-anim');
+	$("#popup-detail-2").addClass('detail-anim-2');
+	$("#popup-detail-3").addClass('detail-anim-3');
+	// $("body").addClass('position-fixed');
+	$("#popup-mobile2").style.display="block";
+	if(  $(".bg-image-mobile").style.opacity="0"){
+	 console.log('hidden');
+	}
+
+};  
+function closepopup(){
+// tl.to(
+//   ".project-image",
+//   0.4,
+//   {
+//     css:{ scale:"1" },
+//     ease: Power2.ease,
+//   },
+// );
+$("#project-title-mobile").removeClass('hide');
+$("#project-title-mobile").addClass('show');
+$("body").removeClass("overflow-hidden");
+$("#popup-text").removeClass('text-anim');
+	$("#popup-detail").removeClass('detail-anim');
+	$("#popup-detail-2").removeClass('detail-anim-2');
+	$("#popup-detail-3").removeClass('detail-anim-3');
+ $("#popup-text").removeClass('text-anim');
+ $("#popup").removeClass('popup-in');
+ $("#popup").removeClass('show');
+ $("#popup").addClass('popup-out');
+//  $("body").removeClass('position-fixed');
+//  $("#popup").addClass('circle-out');
+$("#bg-image").addClass('show-image');
+ $("#bg-image").removeClass('hide-image');
+ $("#popup").style.display="none";
+ $("body").style.position="relative";
+ console.log('closed');
+ $("#popup").removeClass('show');
+ $("#popup-text").addClass('text-anim-out');
+ $("#popup-detail").addClass('detail-anim-out');
+	$("#popup-detail-2").addClass('detail-anim-out-2');
+	$("#popup-detail-3").addClass('detail-anim-out-3');
+}; 
+function closemobilepopup(){
+ 
+$("body").removeClass("overflow-hidden");
+$("#popup-text").removeClass('text-anim');
+	$("#popup-detail").removeClass('detail-anim');
+	$("#popup-detail-2").removeClass('detail-anim-2');
+	$("#popup-detail-3").removeClass('detail-anim-3');
+	$("#popup-text").addClass('text-anim-out');
+ $("#popup-detail").addClass('detail-anim-out');
+	$("#popup-detail-2").addClass('detail-anim-out-2');
+	$("#popup-detail-3").addClass('detail-anim-out-3');
+ $("#popup-text").removeClass('text-anim');
+ $("#popup-mobile").removeClass('popup-in-mobile');
+ $("#popup-mobile").removeClass('show');
+ $("#popup-mobile").addClass('popup-out-mobile');
+//  $("body").removeClass('position-fixed');
+//  $("#popup").addClass('circle-out');
+$(".project-2").removeClass('hide');
+$(".project-3").removeClass('hide');
+$(".project-2").addClass('show');
+$(".project-3").addClass('show');
+$("#bg-image-mobile").addClass('show-image');
+ $("#bg-image-mobile").removeClass('hide-image');
+$("#popup-mobile").style.display="none";
+$("body").style.position="relative";
+console.log('closed');
+$("#popup-mobile").removeClass('show');
+
+ 
+ 
+ 
+}; 
+function closemobilepopup2(){
+$("body").removeClass("overflow-hidden");
+$("#popup-text").removeClass('text-anim');
+	$("#popup-detail").removeClass('detail-anim');
+	$("#popup-detail-2").removeClass('detail-anim-2');
+	$("#popup-detail-3").removeClass('detail-anim-3');
+ $("#popup-text").removeClass('text-anim');
+ $("#popup-mobile2").removeClass('popup-in-mobile');
+ $("#popup-mobile2").removeClass('show');
+ $("#popup-mobile2").addClass('popup-out-mobile');
+//  $("body").removeClass('position-fixed');
+//  $("#popup").addClass('circle-out');
+$(".project-1").removeClass('hide');
+$(".project-3").removeClass('hide');
+$(".project-1").addClass('show');
+$(".project-3").addClass('show');
+$("#bg-image-mobile2").addClass('show-image');
+ $("#bg-image-mobile2").removeClass('hide-image');
+ $("#popup-mobile2").style.display="none";
+ $("body").style.position="relative";
+ console.log('closed');
+ $("#popup-mobile2").removeClass('show');
+ $("#popup-text").addClass('text-anim-out');
+ $("#popup-detail").addClass('detail-anim-out');
+	$("#popup-detail-2").addClass('detail-anim-out-2');
+	$("#popup-detail-3").addClass('detail-anim-out-3');
+ 
+ 
+ 
+}; 
+//this is dummy
+var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
+var closeButton = document.querySelector("#close-button");
+var openButton = document.querySelector("#open-button");
+
+closeButton.addEventListener("click", function () {
+	// $('#open-button').removeClass('circle-in');
+	$('#open-button').addClass('circle-out');
+	// $('#open-button').addClass('clipped-box');
+	$('#open-button').removeClass('circle-out');
+	// $('.custom-modal-bg').css('position','fixed');
+	modal.classList.toggle("closed");
+});
+
+openButton.addEventListener("click", function () {
+	// $('#open-button').addClass('circle-in');
+	$('#open-button').removeClass('clipped-box');
+	modal.classList.toggle("closed");
+	// $('.custom-modal-bg').addClass('');
+	//  $('.custom-modal-bg').css('overflow','hidden');
+	modalOverlay.classList.toggle("closed");
+	console.log('opened');  
+});
+
+
+$('.carousel-for').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+arrows: false,
+fade: true,
+asNavFor: '.carousel-nav'
+});
+$('.carousel-nav').slick({
+slidesToShow: 3,
+slidesToScroll: 1,
+asNavFor: '.carousel-for',
+dots: false,
+infinite:true,
+prevArrow:false,
+nextArrow:false,
+centerMode: true,
+focusOnSelect: true
+});
+
+function openModal() {
+	$('#modal-btn').addClass('circle-in');
+	$('#modal-btn').removeClass('clipped-box');
+	$
+};
 
 //page scale
 jQuery(document).ready(function($){
