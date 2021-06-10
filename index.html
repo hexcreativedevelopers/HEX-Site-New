@@ -87,7 +87,7 @@
     <div></div>
     </div>
   </div>-->
-  <nav class="navbar ml-4 position-absolute  navbar-expand-lg navbar-light
+  <nav class="navbar ml-4 position-absolute fixed-top  navbar-expand-lg navbar-light
       bg-transparent">
     <a class="navbar-brand" href="#"><img src="img/logo.png" width="150px"
         style="margin-top:20px;margin-left:20px;"></a>
@@ -126,24 +126,24 @@
     </div>
   </section> -->
   
-  <section class="section-colors  page-panel" data-color="indigo" 
+  <section class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="indigo" 
   style="background-image: url(img/hybrid-bg.png);
   background-size:cover; background-size:cover;">
     
     <div class=" container">
-      <div class="slider-quotes">
-        <div>
+      <div class="">
+        <div style="">
           <h3 class="title-size text-right title-font">HYBRID</h3>
-          <p class="text-right float-right text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
+          <p class="text-right float-right desc text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
         </div>
-        <div>
+        <!-- <div>
           <h3 class="title-size text-right title-font">Effect</h3>
           <p class="text-right float-right text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
         </div>
         <div>
           <h3 class="title-size text-right title-font">Xcellence</h3>
           <p class="text-right float-right text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
-        </div>
+        </div> -->
       </div>
       <!-- <h5 class="main-paragraph text-right text-white">beyond the visuals</h5> -->
     </div>
@@ -152,6 +152,60 @@
       <h2  style="" class="ml-4
           page-label-title text-white">WE ARE</h2>
       <div   class="page-label-underline-2"></div>
+
+    </div>
+  </section>
+  <section class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="white">
+    
+    <div class=" container">
+      <div class="">
+        <div style="">
+          <h3 class="title-size text-left title-font">Effect</h3>
+          <p class="text-left float-left desc  text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
+        </div>
+        <!-- <div>
+          <h3 class="title-size text-right title-font">Effect</h3>
+          <p class="text-right float-right text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
+        </div>
+        <div>
+          <h3 class="title-size text-right title-font">Xcellence</h3>
+          <p class="text-right float-right text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
+        </div> -->
+      </div>
+      <!-- <h5 class="main-paragraph text-right text-white">beyond the visuals</h5> -->
+    </div>
+    <div style="overflow:hidden;" class="page-label float-left
+        position-absolute">
+      <h2  style="" class="ml-4
+          page-label-title ">WE ARE</h2>
+      <div   class="page-label-underline"></div>
+
+    </div>
+  </section>
+  <section class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="white">
+    
+    <div class=" container">
+      <div class="">
+        <div style="">
+          <h3 class="title-size text-right title-font">Xcellence</h3>
+          <p class="text-right float-right desc  text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
+        </div>
+        <!-- <div>
+          <h3 class="title-size text-right title-font">Effect</h3>
+          <p class="text-right float-right text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
+        </div>
+        <div>
+          <h3 class="title-size text-right title-font">Xcellence</h3>
+          <p class="text-right float-right text-white text-blue">Hybrid is a Hybrid which is actually a hybrid</p>
+        </div> -->
+      </div>
+      <!-- <h5 class="main-paragraph text-right text-white">beyond the visuals</h5> -->
+    </div>
+    <div style="overflow:hidden;" class="page-label float-left
+        position-absolute">
+      <h2  style="" class="ml-4
+          page-label-title">WE ARE</h2>
+      <div   class="page-label-underline"></div>
 
     </div>
   </section>
@@ -238,19 +292,23 @@
       </div>
       <div  style="z-index:9999;" class="mobile-slider">
         
-        <div>     
-          <div id="project" style="position:relative;" onclick="openmobilepopup2(0)"  class="d-flex justify-content-center align-items-center project-circle" >
-            <img style="" class=" project-image-mobile"  src="img/renew-removebg-preview 1.png" alt="">
-            <img id="bg-image-mobile2" class="bg-image-mobile position-relative"   src="img/bg-circle.png"    height="auto" alt="">
-          </div>
-          <h5 id="mobile-thumb-title" class="text-white project-link-mobile text-center">Project-1</h5>     
+        <div>   
+          <div class="d-flex align-items-center flex-column justify-content-center">
+            <div id="project" style="position:relative;" onclick="openmobilepopup2(0)"  class="d-flex justify-content-center align-items-center project-circle" >
+              <img style="" class=" project-image-mobile"  src="img/HEXlogo 1.png" alt="">
+              <img data-id='bg-image-mobile2' class="bg-image-mobile position-relative"   src="img/bg-circle.png"    height="auto" alt="">
+            </div>
+            <h5 data-id="mobile-thumb-title" class="text-white project-link-mobile text-center">Project-1</h5>     
+          </div>  
         </div>
         <div>     
-          <div id="project-2" style="position:relative;" onclick="openmobilepopup2(1)"  class="project-2 d-flex justify-content-center align-items-center project-circle" >
-            <img style="" class=" project-image-mobile"  src="img/renew-removebg-preview 1.png" alt="">
-            <img id="bg-image-mobile2" class="bg-image-mobile position-relative"   src="img/bg-circle.png"    height="auto" alt="">
+          <div class="d-flex align-items-center flex-column justify-content-center">
+            <div  id="project-2" style="position:relative;" onclick="openmobilepopup2(1)"  class="project-2 d-flex justify-content-center align-items-center project-circle" >
+              <img style="" class=" project-image-mobile" width="60%"  src="img/renew-removebg-preview 1.png" alt="">
+              <img data-id='bg-image-mobile2' class="bg-image-mobile position-relative"  width="100%" src="img/bg-circle.png"    height="auto" alt="">
+            </div>
           </div>
-          <h5  class="text-white project-link-mobile text-center">Project-1</h5>     
+          <h5  data-id="mobile-thumb-title" class="text-white project-link-mobile text-center">Project-2</h5>     
         </div>
 
         <!-- <div>
@@ -261,12 +319,39 @@
           <h5  id="project-title-mobile" class="text-white project-link-mobile text-center">Renew </h5>     
         </div> -->
       </div>
+      <div class="d-flex align-items-center justify-content-center">
+        <h2 class="d-inline text-white font-weight-bold">Swipe Right </h2>
+        <span style="font-size:50px;" class="iconify pb-1 pl-3 text-white d-inline-block" data-icon="fluent:swipe-right-24-filled" data-inline="false"></span>
+      </div>
     </div>
     <div class="pc-slider-wrapper">
       <div class="row">
         <div  class="popup curtain-bg" id="popup">
           <div class="container" style="z-index:999;">
-            <div class="row" style="margin-top:150px;">
+            <div class="row" style="margin-top:100px;">
+              <div class="col-md-6 h-25 ">
+                <!-- <img src="img/renew-removebg-preview 1.png"  width="100%"> -->
+              </div>
+              <div class="col-md-6 detail-col w-50 offset-md-6 justify-content-center">
+                <h4 id="popup-text" class="project-title text-left  text-white mt-5 text-anim">San Thaw Dar</h4>
+                <p id="popup-detail" class="main-paragraph text-white mt-5">Se4i id ge askf dhet that in clk</p>
+                <p id="popup-detail-2" class="main-paragraph text-left text-white mt-5">From | CLIENT 1</p>
+                <p  id="popup-detail-3" class="main-paragraph text-left text-white mt-5">From | CLIENT 1</p>
+              </div>
+            </div>
+          </div>
+          <div style="bottom:0;">
+         
+          </div>
+          <a  class="popup__close" onclick="closepopup()">
+            <svg width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 6.14485C2 5.59256 1.55229 5.14485 1 5.14485C0.447717 5.14485 1.65318e-06 5.59256 1.6054e-06 6.14485L2 6.14485ZM0 24.7032C-4.77758e-08 25.2554 0.447715 25.7032 1 25.7032C1.55228 25.7032 2 25.2554 2 24.7032L0 24.7032ZM5.63636 4.03178C5.63636 3.4795 5.18865 3.03178 4.63636 3.03178C4.08408 3.03178 3.63636 3.4795 3.63636 4.03178L5.63636 4.03178ZM3.63636 27C3.63636 27.5523 4.08408 28 4.63636 28C5.18865 28 5.63636 27.5523 5.63636 27L3.63636 27ZM12.0909 1C12.0909 0.447715 11.6432 4.44413e-08 11.0909 0C10.5386 -4.44413e-08 10.0909 0.447715 10.0909 1L12.0909 1ZM10.0909 24.7032C10.0909 25.2554 10.5386 25.7032 11.0909 25.7032C11.6432 25.7032 12.0909 25.2554 12.0909 24.7032L10.0909 24.7032ZM16 2.83746C16 2.28517 15.5523 1.83746 15 1.83746C14.4477 1.83746 14 2.28517 14 2.83746L16 2.83746ZM14 22.5901C14 23.1424 14.4477 23.5901 15 23.5901C15.5523 23.5901 16 23.1424 16 22.5901L14 22.5901ZM1.6054e-06 6.14485L0 24.7032L2 24.7032L2 6.14485L1.6054e-06 6.14485ZM3.63636 4.03178L3.63636 27L5.63636 27L5.63636 4.03178L3.63636 4.03178ZM10.0909 1L10.0909 24.7032L12.0909 24.7032L12.0909 1L10.0909 1ZM14 2.83746L14 22.5901L16 22.5901L16 2.83746L14 2.83746Z" fill="#494949"/>
+            </svg>
+          </a>
+        </div>
+        <div  class="popup curtain-bg" id="popup-2" style="background:url(img/background-3.png)">
+          <div class="container" style="z-index:999;">
+            <div class="row" style="margin-top:100px;">
               <div class="col-md-6 h-25 ">
                 <!-- <img src="img/renew-removebg-preview 1.png"  width="100%"> -->
               </div>
@@ -292,28 +377,22 @@
             <div style="z-index:9999;" class="slider-for">
               <div>
                 <div class="d-flex project-pos position-relative align-items-center justify-content-center">
-                  <div id="project" style="position:relative;" onclick="openpopup()" id="open-popup"
+                  <div id="project" style="position:relative;" onclick="openpopup(0)" id="open-popup"
                    class="d-flex justify-content-center align-items-center project-circle" >
                     <img  class="project-image"  src="img/renew-removebg-preview 1.png" alt="">
-                    <img id="bg-image"  class="bg-image position-relative"   src="img/bg-circle.png"    height="auto" alt="">
+                    <img data-id='bg-image' class="bg-image position-relative"   src="img/bg-circle.png"    height="auto" alt="">
                   </div>            
                 </div>
               </div>
               <div>
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="img/circle-2.png"  width="500px" height="auto" alt="">
+                <div class="d-flex project-pos position-relative align-items-center justify-content-center">
+                  <div id="project" style="position:relative;" onclick="openpopup(1)" id="open-popup"
+                   class="d-flex justify-content-center align-items-center project-circle" >
+                    <img  class="project-image"  src="img/product 2.png" alt="">
+                    <img  data-id='bg-image'  class="bg-image position-relative"   src="img/bg-circle2.png"    height="auto" alt="">
+                  </div>            
                 </div>
-              </div>
-              <div>
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="img/circle.png"  width="500px" height="auto" alt="">
-                </div>
-              </div>
-              <div>
-                <div class="d-flex align-items-center justify-content-center">
-                  <img src="img/circle-2.png"  width="500px" height="auto" alt="">
-                </div>
-              </div>         
+              </div>        
                 <!-- <a id="project" href="#popup" class=" project-circle" style="top:20;">
                   <img src="img/circle.png"  width="100%" height="auto" alt="">
                 </a> -->      
@@ -326,12 +405,8 @@
             <div class="wrap-container" style="scrollbar-width: none
                 !important;" id="wrap-scroll">  
               <ul id="ul-scroll" class="slider-nav">
-                <li> <a id="project-link" class=" item project-link">Renew Wax </a> </li>
-                <li> <a class="item project-link"> Beauty House</a> </li>
-                <li> <a class="item project-link"> Myanant</a> </li>
-                <li> <a class="item project-link"> Life & Hobby</a> </li>
-                <li> <a class="item project-link"> San Thaw Dar</a> </li>
-  
+                <li> <a id="project-link" class=" item project-link">Project-1 </a> </li>
+                <li> <a class="item project-link"> Project-2</a> </li>
               </ul>
             </div>
             <!-- <div class="menu-center">
@@ -556,7 +631,7 @@
   <script src="https://raw.githubusercontent.com/mrdoob/three.js/dev/build/three.js"></script>
 
   <script src="js/map.js" type="module"></script>
-  <!-- <script src="scripts/new-particles-minified.js"></script> -->
+  <script src="scripts/new-particles-minified.js"></script>
   <!-- <script src="scripts/particles-unminified-2.js"></script> -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/locomotivescroll.min.js"></script>
@@ -627,12 +702,12 @@
             section : ".page-panel",
             easing: "easeOutExpo",
              scrollSpeed: 1500,
-             offset : 0,
+             offset : 0 ,
     scrollbars: true,
     standardScrollElements: "",
-    setHeights: true,
+    setHeights: false,
     overflowScroll: false,
-    updateHash: true,
+    updateHash: false,
     touchScroll:true,
     before:function() {},
     after:function() {},
@@ -737,15 +812,41 @@
     
       console.log('opened');
     })
-    function openpopup(){
-      console.log("opened");
+ 
+   //scroll
+   function fillthumbnaildata(id){
+     $()
+   }
+   function fillprojectdata(id){
+    console.log("itemdata:", id, itemdata[id])
+     $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+")");
+    //  $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+") !important");
+    //  $("#popup-mobile2").css("background","#420369");
+    $("#popup-text").text(itemdata[id].title);
+    $("#popup-detail").text(itemdata[id].description);
+    $("#popup-detail-2").text(itemdata[id].client);
+    $("#popup-detail-3").text(itemdata[id].type);
+   };
+   function fillprojectdatapc(id){
+    console.log("itemdata:", id, itemdata[id])
+     $("#popup").css("background-image","url("+itemdata[id].bg_image+")");
+    //  $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+") !important");
+    //  $("#popup-mobile2").css("background","#420369");
+    $("#popup-text").text(itemdata[id].title);
+    $("#popup-detail").text(itemdata[id].description);
+    $("#popup-detail-2").text(itemdata[id].client);
+    $("#popup-detail-3").text(itemdata[id].type);
+   };
+   function runanimationpc(){
+    console.log("opened");
       
       $("#popup").removeClass('popup-out');
         // $(".bg-image").style.visibility="hidden";
       $("#popup").addClass('show');
       $("#popup").addClass('popup-in');
       $("body").addClass("overflow-hidden");
-      $("#bg-image").addClass('hide-image');
+      
+      $("[data-id='bg-image']").addClass('hide-image');
       $("#popup-text").addClass('text-anim');
       $("#popup-detail").addClass('detail-anim');
       $("#popup-detail-2").addClass('detail-anim-2');
@@ -763,24 +864,10 @@
       if(  $(".bg-image").style.opacity="0"){
        console.log('hidden');
       }
-    
-   }; 
-   function fillthumbnaildata(id){
-     $()
    }
-   function fillprojectdata(id){
-    console.log("itemdata:", id, itemdata[id])
-     $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+")");
-    //  $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+") !important");
-    //  $("#popup-mobile2").css("background","#420369");
-    $("#popup-text").text(itemdata[id].title);
-    $("#popup-detail").text(itemdata[id].description);
-    $("#popup-detail-2").text(itemdata[id].client);
-    $("#popup-detail-3").text(itemdata[id].type);
-   };
-   
+  
    function runanimation(){
-     $("#mobile-thumb-title").toggle('hide');
+     $("[data-id='mobile-thumb-title']").toggle('hide');
     $("#popup-mobile2").removeClass('popup-out-mobile');
       // $(".bg-image").style.visibility="hidden";
      $("#project-title-mobile2").addClass('hide');
@@ -788,22 +875,30 @@
     // $(".project-3").addClass('hide');
       $("#popup-mobile2").addClass('show');
       $("#popup-mobile2").addClass('popup-in-mobile');
-      $("body").addClass("h-100 overflow-hidden");
-      $("#bg-image-mobile2").addClass('hide-image');
+      $('body').addClass('stop-scrolling');
+    
+      $("[data-id='bg-image-mobile2']").addClass('hide-image');
       $("#popup-text").addClass('text-anim');
       $("#popup-detail").addClass('detail-anim');
       $("#popup-detail-2").addClass('detail-anim-2');
       $("#popup-detail-3").addClass('detail-anim-3');
-      $('body').addClass('stop-scrolling');
+      // $('body').css("overflow", "hidden");
       $('body').bind('touchmove', function(e){e.preventDefault()})
       console.log( $('body').bind('touchmove', function(e){e.preventDefault()}));
    }
    var hold=false;
+   function openpopup(id){
+     $.scrollify.disable();
+    fillprojectdatapc(id);
+      runanimationpc();   
+   }; 
    function openmobilepopup2(id){
      $(".mobile-slider").slick("slickSetOption", "accessibility", false);
    $(".mobile-slider").slick("slickSetOption", "draggable", false);
    $(".mobile-slider").slick("slickSetOption", "swipe", false);
    $(".mobile-slider").slick("slickSetOption", "touchMove", false); 
+   $.scrollify.disable();
+  //  console.log( $.scrollify.disable());
    hold = !hold; 
    console.log(hold);
      console.log(id);
@@ -826,6 +921,7 @@
     //     ease: Power2.ease,
     //   },
     // );
+    $.scrollify.enable();
     $("#project-title-mobile").removeClass('hide');
     $("#project-title-mobile").addClass('show');
     $("body").removeClass("overflow-hidden");
@@ -839,8 +935,8 @@
      $("#popup").addClass('popup-out');
      $("body").removeClass('position-fixed');
     //  $("#popup").addClass('circle-out');
-    $("#bg-image").addClass('show-image');
-     $("#bg-image").removeClass('hide-image');
+    $("[data-id='bg-image']").removeClass('hide-image');
+    $("[data-id='bg-image']").addClass('show-image');
      $("#popup").style.display="none";
      $("body").style.position="relative";
      console.log('closed');
@@ -849,16 +945,19 @@
      $("#popup-detail").addClass('detail-anim-out');
       $("#popup-detail-2").addClass('detail-anim-out-2');
       $("#popup-detail-3").addClass('detail-anim-out-3');
+
    }; 
    function closemobilepopup2(){
     $(".mobile-slider").slick("slickSetOption", "accessibility", true);
    $(".mobile-slider").slick("slickSetOption", "draggable", true);
    $(".mobile-slider").slick("slickSetOption", "swipe", true);
    $(".mobile-slider").slick("slickSetOption", "touchMove", true); 
+   $.scrollify.enable();
+  //  console.log( $.scrollify.enable());
    hold = !hold; 
    console.log(hold);
-    $("#mobile-thumb-title").toggle('show');
-    $("#project-2").toggle('show');
+    $("[data-id='mobile-thumb-title']").toggle('show');
+    // $("#project-2").toggle('show');
      console.log('im closing');
      $("#popup-mobile2").removeClass('popup-in-mobile');
      $("#popup-mobile2").addClass('popup-out-mobile');
@@ -871,9 +970,9 @@
      $("#popup-mobile2").removeClass('show');
     //  $("#popup-mobile2").addClass('hide');
     //  $("body").removeClass('position-fixed');
-    $("#bg-image-mobile2").addClass('show-image');
-     $("#bg-image-mobile2").removeClass('hide-image');
-     $("body").css("position","relative");
+    $("[data-id='bg-image-mobile2']").addClass('show-image');
+     $("[data-id='bg-image-mobile2']").removeClass('hide-image');
+    //  $("body").css("position","relative");
      $('body').removeClass('stop-scrolling');
      $('body').unbind('touchmove')
 
@@ -909,7 +1008,6 @@
       console.log('opened');  
     });
 
-   
     $('.carousel-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
