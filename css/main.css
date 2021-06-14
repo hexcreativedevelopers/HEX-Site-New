@@ -449,7 +449,16 @@ border-radius: 10px;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-
+.team-card{
+  opacity:.7;
+  transition:400ms ease-in-out;
+}
+ .slick-center .team-card{
+  opacity:1;
+  transform:scale(1.1);
+  margin:5px;
+  transition:400ms ease-in-out;
+}
 .team-member{
   position: relative;
   height: 100%;
@@ -463,16 +472,16 @@ border-radius: 10px;
   display:none;
 }
 .team-slider-pc{
-  display:block;
+  display:flex;
 
 }
 @media(max-width:425px){
-  .team-slider-mobile-wrapper{
-    display:block;
-  }
   .team-slider-pc{
     display:none;
   
+  }
+  .team-slider-mobile-wrapper{
+    display:block;
   }
 }
 .people-info{
@@ -509,6 +518,67 @@ border-radius: 10px;
   font-weight:400;
   font-size:22px;
   transform:translateX(-300px);
+}
+.team-name{
+  font-family: 'Lexend Giga', sans-serif;
+  letter-spacing:.1em;
+  font-weight:400;
+  text-align:left;
+  font-size:16px;
+
+}
+.bdr-left-black{
+  border-left:3px solid #262626;
+}
+.team-role{
+    letter-spacing:.1em;
+    font-weight:bold;
+    font-size:16px;
+    text-align:left;
+    font-family: 'Lexend Giga', sans-serif;
+
+}
+.client-title{
+
+    font-family: 'Lexend Giga', sans-serif;
+    letter-spacing:.1em;
+    font-weight:bold;
+    font-size:80px;
+
+}
+.projects-title{
+  left:0;
+  top:90px;
+  margin-bottom:40px;
+  padding-left:20px;
+  margin-left:10px;
+}
+.team-title{
+  left:0;
+  top:80px;
+  margin-bottom:40px;
+  padding-left:20px;
+  margin-left:10px;
+}
+.client-bdr{
+  border-right:5px solid #262626;
+  padding-right:10px;
+}
+.client-desc{
+
+  font-family: 'Lexend Giga', sans-serif;
+  letter-spacing:.1em;
+  font-weight:normal;
+  font-size:20px;
+
+}
+@media(max-width:425px){
+  .client-title{
+    font-size:20px;
+  }
+  .client-desc{
+    font-size:14px;
+  }
 }
 .people-role{
   letter-spacing:.1em;
@@ -1189,6 +1259,26 @@ button {
     z-index: 999;
     opacity: 1;
  }
+ .slick-list{
+   height:100% !important;
+ }
+ .carousel-cursor {
+  font-size: 1.5rem;
+  opacity: .8;
+  background: transparent;
+  position: absolute;
+  color: white;
+  top: -10px;
+}
+.carousel-cursor-black {
+  font-size: 1.5rem;
+  opacity: .8;
+  background: transparent;
+  position: absolute;
+  color: #262626;
+  top: -10px;
+}
+
  .slick-slide .slick-current .slick-active{
   position: relative;
   left: 0px;
@@ -1719,3 +1809,81 @@ visibility: hidden;
     overflow:hidden;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   }
+
+
+  .dotstyle {
+    position: fixed;
+    margin: -95px auto 0;
+    top: 50%;
+    z-index:9999;
+    right: 30px;
+    padding: 0;
+    list-style: none;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+  }
+  
+  .dotstyle li {
+    position: relative;
+    display: block;
+    margin: 18px 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  .dotstyle li a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50%;
+    background-color: #262626;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-indent: -999em;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .dotstyle li a:focus {
+    outline: none;
+  }
+  
+  .dotstyle-fillin li a {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #262626;
+    -webkit-transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .dotstyle-fillin li a:hover {
+    opacity: .8;
+  }
+  
+  .dotstyle-fillin li a:focus {
+    box-shadow: 0px 0px 0px 8px #262626 inset;
+  }
+  
+  .dotstyle-fillin li.current a {
+    box-shadow: inset 0 0 0 8px ;
+  }
+  .mobile {
+    position: fixed;
+    top: 11px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    height: 0px;
+    z-index: 1;
+  }
+  /*----------
+    SECTION - HOME
+  ----------*/
+  

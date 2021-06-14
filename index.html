@@ -92,15 +92,26 @@
     <a class="navbar-brand" href="#"><img src="img/logo.png" width="150px"
         style="margin-top:20px;margin-left:20px;"></a>
   </nav>
-
-   <nav id="dot-nav" style="top: calc(50% - 55px);">   
-    </nav> 
-  <section  class="section-colors page-panel text-center" data-color="white">
+  <!-- <div class="mobile">
+    <ul class="dotstyle dotstyle-fillin">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about1">Hybrid</a></li>
+      <li><a href="#about2">Effect</a></li>
+      <li><a href="#about3">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div> -->
+   <!-- <nav id="dot-nav" style="top: calc(50% - 55px);">   
+    </nav>  -->
+  <section id="home"  class="section-colors page-panel text-center" data-color="white">
     <div id="three" class="fixed-top" style="width:100vw;height:100vh;
         z-index:-2;"> </div>
     <div class="position-absolute text-center" style="width:100vw;height:100vh;">
       <h2  class="main-title title-font">Creative Agency</h2>
-      <h5 class="main-paragraph text-center">beyond the visuals</h5>
+      <h5 class="main-paragraph text-center">Grab the edge with innovative product development,
+        high-end web design, and effective branding.</h5>
       <!-- <button class="border-gradient-glass text-blue px-5 glass-btn">Begin</button> -->
     </div>
     <div style="overflow:hidden;" class="page-label float-left
@@ -126,7 +137,7 @@
     </div>
   </section> -->
   
-  <section class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="indigo" 
+  <section id="about1" class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="indigo" 
   style="background-image: url(img/hybrid-bg.png);
   background-size:cover; background-size:cover;">
     
@@ -155,7 +166,7 @@
 
     </div>
   </section>
-  <section class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="white">
+  <section id="about2" class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="white">
     
     <div class=" container">
       <div class="">
@@ -182,7 +193,7 @@
 
     </div>
   </section>
-  <section class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="white">
+  <section id="about3" class="d-flex align-items-center justify-content-center section-colors  page-panel" data-color="white">
     
     <div class=" container">
       <div class="">
@@ -265,7 +276,7 @@
       </div>  
     </div>
   </section> -->
-  <section class=" section-colors  page-panel" data-color="projects">
+  <section id="projects" class=" section-colors  page-panel" data-color="projects">
     <div class="mobile-slider-wrapper">
       <div  class="popup-mobile curtain-bg" id="popup-mobile2" style="background-position:center;background-size:cover;background-repeat: no-repeat;">
         <div class="container" style="z-index:999;">
@@ -290,8 +301,8 @@
           </svg>
         </a>
       </div>
-      <div  style="z-index:9999;" class="mobile-slider">
-        
+      <h5 class="text-black team-role projects-title d-inline position-absolute"> Projects</h5>
+      <div  style="z-index:9999;" class="mobile-slider">  
         <div>   
           <div class="d-flex align-items-center flex-column justify-content-center">
             <div id="project" style="position:relative;" onclick="openmobilepopup2(0)"  class="d-flex justify-content-center align-items-center project-circle" >
@@ -443,34 +454,36 @@
   </section>
   <!-- <section class="custom-modal-bg visible-none" style="overflow: hidden ;">
   </section>   -->
-  <section style="overflow:hidden" class="d-flex  page-panel justify-content-center
+  <section id="clients" style="overflow:hidden" class="d-flex  page-panel justify-content-center
     section-colors" data-color="clients">
-    <div class="container text-center" style="width:100vw;height:100vh;">
+    <div class="container text-center" >
       <div class="row">
         <!-- <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
           <h5 class="main-title title-font text-left text-white">Our<br> Clients</h5>
           <p class="text-white text-left"> These are our clients</p>
         </div> -->
-        <div class="col-md-12 ">
+        <div class="col-md-6">
+            <div class="client-bdr">
+              <h1 class="client-title text-right pr-2"> Our Clients</h1>
+              <p class="client-desc text-right">Lorem Ipsum is the Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="col-md-6 ">
+        
           <div class="d-flex align-items-center justify-content-center">
             <div style="top:200px;" class="clients">
               <div class="row-1 mb-4" style="width:100%;
                         align-self:center;border-bottom:2px solid #494949;">
                 <img src="img/logo-1.png">
-                <img src="img/logo2.png">
-                <img src="img/logo-3.png">
-              
+                <img src="img/logo2.png">            
               </div>
               <div class="row-1 mb-3" style="border-bottom:2px solid #494949;">
                 <img src="img/logo-1.png">
-                <img src="img/logo2.png">
-                <img src="img/logo-3.png">
+                <img src="img/logo2.png">           
               </div>
               <div class="row-1 mb-3" style="border-bottom:2px solid #494949;">
                 <img src="img/logo-1.png">
-                <img src="img/logo2.png">
-                <img src="img/logo-3.png">
-      
+                <img src="img/logo2.png">  
               </div>
             </div>
           </div>
@@ -486,20 +499,67 @@
   </section>
 
 
-  <section class=" section-colors  d-flex page-panel mb-5" data-color="team">
+  <section  id="team" class=" section-colors page-panel mb-5" data-color="team">
     
     <div class="team-slider-mobile-wrapper">
-      <div class="team-slider-mobile" style="height:100vh;">
-        <div>
-            <div style="width:100vw;" class="team-image d-flex align-content-center justiy-items-center">
-              <img src="images/person-01.png" width="100%" alt="">
-            </div>
-        </div>
-        <div>
-          <div class="team-image">
-            <img src="images/person-02.png" width="100%" alt="">
+      <div class="mt-5 pt-5">
+        <h5 class="text-white team-role team-title d-inline position-absolute"> Our Team</h5>
+        <div class="team-slider-mobile" style="height:100vh;">
+          <div>
+              <div style=" background:#fff; border-radius:20px; padding:10px;" class="team-card mx-2 px-1 pt-2 pb-2 ">
+                <img src="images/person-01.png" width="100%" alt="">
+                <div class="bdr-left-black px-2 ml-3 mt-2 mb-2">
+                  <h4 class="team-name pl-2 text-black">Myat Kaung Khant</h4>
+                  <h4 class="team-role pl-2 text-black mb-4">Mobile Developer</h4>
+                </div>
+              </div>
           </div>
-      </div>
+          <div>
+            <div style=" background:#fff; border-radius:20px; padding:10px;" class="team-card mx-2 px-1 pt-2 pb-2 ">
+              <img src="images/person-02.png" width="100%" alt="">
+              <div class="bdr-left-black px-2 ml-3 mt-2 mb-2">
+                <h4 class="team-name pl-2 text-black">Myat Kaung Khant</h4>
+                <h4 class="team-role pl-2 text-black mb-4">Mobile Developer</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style=" background:#fff; border-radius:20px; padding:10px;" class="team-card mx-2 px-1 pt-2 pb-2 ">
+              <img src="images/person-03.png" width="100%" alt="">
+              <div class="bdr-left-black px-2 ml-3 mt-2 mb-2">
+                <h4 class="team-name pl-2 text-black">Myat Kaung Khant</h4>
+                <h4 class="team-role pl-2 text-black mb-4">Mobile Developer</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style=" background:#fff; border-radius:20px; padding:10px;" class="team-card mx-2 px-1 pt-2 pb-2 ">
+              <img src="images/person-04.png" width="100%" alt="">
+              <div class="bdr-left-black px-2 ml-3 mt-2 mb-2">
+                <h4 class="team-name pl-2 text-black">Myat Kaung Khant</h4>
+                <h4 class="team-role pl-2 text-black mb-4">Mobile Developer</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style=" background:#fff; border-radius:20px; padding:10px;" class="team-card mx-2 px-1 pt-2 pb-2 ">
+              <img src="images/person-05.png" width="100%" alt="">
+              <div class="bdr-left-black px-2 ml-3 mt-2 mb-2">
+                <h4 class="team-name pl-2 text-black">Myat Kaung Khant</h4>
+                <h4 class="team-role pl-2 text-black mb-4">Mobile Developer</h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style=" background:#fff; border-radius:20px; padding:10px;" class="team-card mx-2 px-1 pt-2 pb-2 ">
+              <img src="images/person-06.png" width="100%" alt="">
+              <div class="bdr-left-black px-2 ml-3 mt-2 mb-2">
+                <h4 class="team-name pl-2 text-black">Myat Kaung Khant</h4>
+                <h4 class="team-role pl-2 text-black mb-4">Mobile Developer</h4>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div style="overflow:hidden;" class="page-label float-left
@@ -508,8 +568,8 @@
                 page-label-title">TEAM</h2>
       <div  class="page-label-underline-2"></div>
     </div>
-    <div class="team-slider-pc d-flex align-items-center justify-content-center">
-      <div id="people-data" class="people-info">
+    <div class="team-slider-pc  align-items-center justify-content-center">
+       <div id="people-data" class="people-info">
      
       </div>
       <div class=" team-viewer"></div>
@@ -518,7 +578,7 @@
     </div>
   </section>
 
-  <section class="section-colors  page-panel" data-color="contact">
+  <section id="contact" class="section-colors  page-panel" data-color="contact">
     <div style="z-index:9;;" class="container position-absolute">
       <div class="row" style="margin-top:250px;">
         <div class="col-md-6 contact-us">
@@ -597,447 +657,28 @@
   </div>
  
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
-  <script src="" async defer></script>
-  <script src="js/hover.js"></script>
   <!-- <scriptclose src="js/modernizr.js"></script>
   <script src="js/velocity.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
   <!-- <script src="js/scroll-visible.js"></script> -->
-  <script src="js/scroll-nav.js"></script>
+  <!-- <script src="js/scroll-nav.js"></script> -->
   <!-- <script src="scroll.js"></script> -->
-  <!--   -->
-   <script>        
-      const gra = function(min, max) {
-          return Math.random() * (max - min) + min;
-      }
-      const init = function(){
-        let items = document.querySelectorAll('section');
-        for (let i = 0; i < items.length; i++){
-        
-        }
-        cssScrollSnapPolyfill()
-      }
-      init();
-    </script>
    <!-- <script src="scripts/compiled.js"></script> --> 
     <!-- models -->
     <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script src="https://raw.githubusercontent.com/mrdoob/three.js/dev/build/three.js"></script>
-
   <script src="js/map.js" type="module"></script>
-  <script src="scripts/new-particles-minified.js"></script>
-  <!-- <script src="scripts/particles-unminified-2.js"></script> -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/locomotivescroll.min.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <!-- <script src="js/nav-menu.js"></script> -->
+  <!-- <script src="scripts/new-particles-minified.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js" integrity="sha512-w58XJ/0dVbEfZVJoJyBUOTMGBWmIW4jEYJSA0898d2L0Ghpum0FvwK7qTuHhkTctApzrchv3Neli+28ajI4+fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <!-- <script src="js/nav-menu.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/2.4.0/jquery.waitforimages.min.js" integrity="sha512-L8XC2456W0xO8gCYqaY9/EQSHr9SL+QB2gaD6MQQLNZMUj52g99HkWqo2Cbw2LGQ0CRCLgxTcYUebQFCEq9NcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-
- 
-    var itemdata=[{
-      id:1,
-      bg_image:"img/background-2.png",
-      title:"San Thaw Dar",
-      description:"Lorem ipsum is my dummy text",
-      client:"San Thaw Dar ",
-      type:"FROM | San Thaw Dar"
-    },
-    {
-      id:2,
-      bg_image:"img/background-3.png",
-      title:"Renew Wax",
-      description:"Lorem ipsum is my dummy text",
-      client:"Renew Wax",
-      type:"client1"
-    },  
-  ]
-          $('body').waitForImages(function() {
-           
-        });
-        
-      $(document).ready(function(){
-        paceOptions = {
-        ajax: true,
-        document: true,
-        eventLag: false
-        };
-        var animationData={"v":"5.7.8","fr":29.9700012207031,"ip":0,"op":37.0000015070409,"w":1000,"h":1000,"nm":"Hex loading","ddd":0,"assets":[],"layers":[{"ddd":0,"ind":1,"ty":4,"nm":"First Outlines","parent":5,"sr":1,"ks":{"o":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":8,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":15,"s":[100]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":24,"s":[100]},{"t":28.0000011404634,"s":[0]}],"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":0,"s":[-90]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":15,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":24,"s":[0]},{"t":39.0000015885026,"s":[90]}],"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.333,"y":0},"t":0,"s":[500,783.784,0],"to":[0,-47.297,0],"ti":[0,47.297,0]},{"i":{"x":0.667,"y":0.667},"o":{"x":0.167,"y":0.167},"t":15,"s":[500,500,0],"to":[0,0,0],"ti":[0,0,0]},{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0},"t":24,"s":[500,500,0],"to":[0,-52.027,0],"ti":[0,52.027,0]},{"t":39.0000015885026,"s":[500,187.838,0]}],"ix":2,"l":2},"a":{"a":0,"k":[500,500,0],"ix":1,"l":2},"s":{"a":0,"k":[67.568,67.568,100],"ix":6,"l":2}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-10.25],[0,0],[10.24,0],[0,10.24],[0,0],[-10.25,0]],"o":[[0,0],[0,10.24],[-10.25,0],[0,0],[0,-10.25],[10.24,0]],"v":[[18.545,-172.1],[18.545,172.1],[0.005,190.65],[-18.545,172.1],[-18.545,-172.1],[0.005,-190.65]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[370.17,526.41],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Group 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":900.000036657751,"st":0,"bm":0},{"ddd":0,"ind":2,"ty":4,"nm":"Second Outlines","parent":5,"sr":1,"ks":{"o":{"a":1,"k":[{"i":{"x":[0.667],"y":[-31.407]},"o":{"x":[0.333],"y":[0]},"t":0,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0.284]},"t":8,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":15,"s":[100]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":24,"s":[100]},{"t":28.0000011404634,"s":[0]}],"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":0,"s":[-90]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":15,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":24,"s":[0]},{"t":39.0000015885026,"s":[90]}],"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.333,"y":0},"t":0,"s":[500,783.784,0],"to":[0,-47.297,0],"ti":[0,47.297,0]},{"i":{"x":0.667,"y":0.667},"o":{"x":0.167,"y":0.167},"t":15,"s":[500,500,0],"to":[0,0,0],"ti":[0,0,0]},{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0},"t":24,"s":[500,500,0],"to":[0,-52.027,0],"ti":[0,52.027,0]},{"t":39.0000015885026,"s":[500,187.838,0]}],"ix":2,"l":2},"a":{"a":0,"k":[500,500,0],"ix":1,"l":2},"s":{"a":0,"k":[67.568,67.568,100],"ix":6,"l":2}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-10.25],[0,0],[10.24,0],[0,10.239],[0,0],[-10.24,0]],"o":[[0,0],[0,10.239],[-10.24,0],[0,0],[0,-10.25],[10.24,0]],"v":[[18.55,-212.995],[18.55,212.995],[0,231.545],[-18.55,212.995],[-18.55,-212.995],[0,-231.545]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[437.615,528.115],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Group 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":900.000036657751,"st":0,"bm":0},{"ddd":0,"ind":3,"ty":4,"nm":"Third Outlines","parent":5,"sr":1,"ks":{"o":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":8,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":15,"s":[100]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":24,"s":[100]},{"t":28.0000011404634,"s":[0]}],"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":0,"s":[-90]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":15,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":24,"s":[0]},{"t":39.0000015885026,"s":[90]}],"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.333,"y":0},"t":0,"s":[500,202.703,0],"to":[0,49.55,0],"ti":[0,-49.55,0]},{"i":{"x":0.667,"y":0.667},"o":{"x":0.167,"y":0.167},"t":15,"s":[500,500,0],"to":[0,0,0],"ti":[0,0,0]},{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0},"t":24,"s":[500,500,0],"to":[0,52.027,0],"ti":[0,-52.027,0]},{"t":39.0000015885026,"s":[500,812.162,0]}],"ix":2,"l":2},"a":{"a":0,"k":[500,500,0],"ix":1,"l":2},"s":{"a":0,"k":[67.568,67.568,100],"ix":6,"l":2}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-10.25],[0,0],[10.25,0],[0,10.24],[0,0],[-10.24,0]],"o":[[0,0],[0,10.24],[-10.24,0],[0,0],[0,-10.25],[10.25,0]],"v":[[18.545,-219.81],[18.545,219.81],[-0.005,238.359],[-18.545,219.81],[-18.545,-219.81],[-0.005,-238.359]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[557.33,478.7],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Group 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":900.000036657751,"st":0,"bm":0},{"ddd":0,"ind":4,"ty":4,"nm":"Fourth Outlines","parent":5,"sr":1,"ks":{"o":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":8,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":15,"s":[100]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":24,"s":[100]},{"t":28.0000011404634,"s":[0]}],"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.333],"y":[0]},"t":0,"s":[-90]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":15,"s":[0]},{"i":{"x":[0.667],"y":[1]},"o":{"x":[0.167],"y":[0]},"t":24,"s":[0]},{"t":39.0000015885026,"s":[90]}],"ix":10},"p":{"a":1,"k":[{"i":{"x":0.667,"y":1},"o":{"x":0.333,"y":0},"t":0,"s":[500,202.703,0],"to":[0,49.55,0],"ti":[0,-49.55,0]},{"i":{"x":0.667,"y":0.667},"o":{"x":0.167,"y":0.167},"t":15,"s":[500,500,0],"to":[0,0,0],"ti":[0,0,0]},{"i":{"x":0.667,"y":1},"o":{"x":0.167,"y":0},"t":24,"s":[500,500,0],"to":[0,52.027,0],"ti":[0,-52.027,0]},{"t":39.0000015885026,"s":[500,812.162,0]}],"ix":2,"l":2},"a":{"a":0,"k":[500,500,0],"ix":1,"l":2},"s":{"a":0,"k":[67.568,67.568,100],"ix":6,"l":2}},"ao":0,"shapes":[{"ty":"gr","it":[{"ind":0,"ty":"sh","ix":1,"ks":{"a":0,"k":{"i":[[0,-10.24],[0,0],[10.24,0],[0,10.24],[0,0],[-10.25,0]],"o":[[0,0],[0,10.24],[-10.25,0],[0,0],[0,-10.24],[10.24,0]],"v":[[18.545,-183.185],[18.545,183.175],[0.005,201.725],[-18.545,183.175],[-18.545,-183.185],[0.005,-201.725]],"c":true},"ix":2},"nm":"Path 1","mn":"ADBE Vector Shape - Group","hd":false},{"ty":"fl","c":{"a":0,"k":[1,1,1,1],"ix":4},"o":{"a":0,"k":100,"ix":5},"r":1,"bm":0,"nm":"Fill 1","mn":"ADBE Vector Graphic - Fill","hd":false},{"ty":"tr","p":{"a":0,"k":[629.83,476.145],"ix":2},"a":{"a":0,"k":[0,0],"ix":1},"s":{"a":0,"k":[100,100],"ix":3},"r":{"a":0,"k":0,"ix":6},"o":{"a":0,"k":100,"ix":7},"sk":{"a":0,"k":0,"ix":4},"sa":{"a":0,"k":0,"ix":5},"nm":"Transform"}],"nm":"Group 1","np":2,"cix":2,"bm":0,"ix":1,"mn":"ADBE Vector Group","hd":false}],"ip":0,"op":900.000036657751,"st":0,"bm":0},{"ddd":0,"ind":5,"ty":3,"nm":"Dark Gray Solid 2","sr":1,"ks":{"o":{"a":0,"k":100,"ix":11},"r":{"a":1,"k":[{"i":{"x":[0.25],"y":[1]},"o":{"x":[0.75],"y":[0]},"t":0,"s":[-180]},{"i":{"x":[0.25],"y":[1]},"o":{"x":[0.75],"y":[0]},"t":15,"s":[0]},{"i":{"x":[0.25],"y":[1]},"o":{"x":[0.75],"y":[0]},"t":22,"s":[0]},{"t":37.0000015070409,"s":[180]}],"ix":10},"p":{"a":0,"k":[500,500,0],"ix":2,"l":2},"a":{"a":0,"k":[500,500,0],"ix":1,"l":2},"s":{"a":0,"k":[148,148,100],"ix":6,"l":2}},"ao":0,"ip":0,"op":900.000036657751,"st":0,"bm":0}],"markers":[{"tm":22.0000008960784,"cm":"2","dr":0}]};
-        var params = {  
-          container: document.getElementById('lottie'),
-          renderer: 'svg',
-          loop: true,
-          autoplay: true,
-          animationData: animationData
-      };
-
-      var anim;
-
-      anim = lottie.loadAnimation(params);
-        Pace.on('done', function() {
-      
-            TweenMax.to("#loading", 1, {
-                  delay: 1,
-                  y: '-100%',
-                  opacity: 1,
-                  ease: Expo.easeInOut
-                  })
-            $('body').removeClass('position-fixed');
-       });
-      });
-// $(document).ready(function() {
-//   $('.loading-wrapper').remove();
-//   console.log('removed'); 
-// });
-    tl = new TimelineMax();
-    $.scrollify({
-            section : ".page-panel",
-            easing: "easeOutExpo",
-             scrollSpeed: 1500,
-             offset : 0 ,
-    scrollbars: true,
-    standardScrollElements: "",
-    setHeights: false,
-    overflowScroll: false,
-    updateHash: false,
-    touchScroll:true,
-    before:function() {},
-    after:function() {},
-    afterResize:function() {},
-    afterRender:function() {}
-          });
-    $('.slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      centerMode:false,
-      asNavFor: '.slider-nav'
-    });
-    $('.team-slider-mobile').slick({
-  
-    });
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      dots: false,
-      vertical: true,
-      verticalSwiping: true,
-      centerMode: true,
-      focusOnSelect: true,
-      prevArrow: false,
-      nextArrow: false,
-      infinite: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        },
-        {
-          breakpoint: 1440,
-          settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 4
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        }
-      ]
-    });
-    //for slider mobile 
-    $('.mobile-slider').slick({
-  centerMode: true,
-  centerPadding: "50%",
-  slidesToShow: 1,
-  infinite:false,
-
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
-
-
-    $('.slider-quotes').slick({
-      prevArrow:false,
-      nextArrow:false,
-      centerMode: true,
-      autoplay:true,
-      focusOnSelect: true,
-      fade: true,
-      speed:true
-
-    });
-    var popup = documnt.querySelector("#openpopup");
-    poup.addEventListener("click",function(){
-    
-      console.log('opened');
-    })
- 
-   //scroll
-   function fillthumbnaildata(id){
-     $()
-   }
-   function fillprojectdata(id){
-    console.log("itemdata:", id, itemdata[id])
-     $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+")");
-    //  $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+") !important");
-    //  $("#popup-mobile2").css("background","#420369");
-    $("#popup-text").text(itemdata[id].title);
-    $("#popup-detail").text(itemdata[id].description);
-    $("#popup-detail-2").text(itemdata[id].client);
-    $("#popup-detail-3").text(itemdata[id].type);
-   };
-   function fillprojectdatapc(id){
-    console.log("itemdata:", id, itemdata[id])
-     $("#popup").css("background-image","url("+itemdata[id].bg_image+")");
-    //  $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+") !important");
-    //  $("#popup-mobile2").css("background","#420369");
-    $("#popup-text").text(itemdata[id].title);
-    $("#popup-detail").text(itemdata[id].description);
-    $("#popup-detail-2").text(itemdata[id].client);
-    $("#popup-detail-3").text(itemdata[id].type);
-   };
-   function runanimationpc(){
-    console.log("opened");
-      
-      $("#popup").removeClass('popup-out');
-        // $(".bg-image").style.visibility="hidden";
-      $("#popup").addClass('show');
-      $("#popup").addClass('popup-in');
-      $("body").addClass("overflow-hidden");
-      
-      $("[data-id='bg-image']").addClass('hide-image');
-      $("#popup-text").addClass('text-anim');
-      $("#popup-detail").addClass('detail-anim');
-      $("#popup-detail-2").addClass('detail-anim-2');
-      $("#popup-detail-3").addClass('detail-anim-3');
-    //   tl.to(
-    //   ".project-image",
-    //   0.4,
-    //   {
-    //     css:{ scale:'+=.1' },
-    //     ease: Power2.ease,
-    //   },
-    // );
-      // $("body").addClass('position-fixed');
-      $("#popup").style.display="block";
-      if(  $(".bg-image").style.opacity="0"){
-       console.log('hidden');
-      }
-   }
-  
-   function runanimation(){
-     $("[data-id='mobile-thumb-title']").toggle('hide');
-    $("#popup-mobile2").removeClass('popup-out-mobile');
-      // $(".bg-image").style.visibility="hidden";
-     $("#project-title-mobile2").addClass('hide');
-    //  $(".project-1").addClass('hide');
-    // $(".project-3").addClass('hide');
-      $("#popup-mobile2").addClass('show');
-      $("#popup-mobile2").addClass('popup-in-mobile');
-      $('body').addClass('stop-scrolling');
-    
-      $("[data-id='bg-image-mobile2']").addClass('hide-image');
-      $("#popup-text").addClass('text-anim');
-      $("#popup-detail").addClass('detail-anim');
-      $("#popup-detail-2").addClass('detail-anim-2');
-      $("#popup-detail-3").addClass('detail-anim-3');
-      // $('body').css("overflow", "hidden");
-      $('body').bind('touchmove', function(e){e.preventDefault()})
-      console.log( $('body').bind('touchmove', function(e){e.preventDefault()}));
-   }
-   var hold=false;
-   function openpopup(id){
-     $.scrollify.disable();
-    fillprojectdatapc(id);
-      runanimationpc();   
-   }; 
-   function openmobilepopup2(id){
-     $(".mobile-slider").slick("slickSetOption", "accessibility", false);
-   $(".mobile-slider").slick("slickSetOption", "draggable", false);
-   $(".mobile-slider").slick("slickSetOption", "swipe", false);
-   $(".mobile-slider").slick("slickSetOption", "touchMove", false); 
-   $.scrollify.disable();
-  //  console.log( $.scrollify.disable());
-   hold = !hold; 
-   console.log(hold);
-     console.log(id);
-     $("#mobile-thumbnail-title").toggle("hide");
-    //  $("#project-2").toggle("hide");
-      console.log("opened");
-      fillprojectdata(id);
-      runanimation();   
-
-
-
-    
-   };  
-   function closepopup(){
-    // tl.to(
-    //   ".project-image",
-    //   0.4,
-    //   {
-    //     css:{ scale:"1" },
-    //     ease: Power2.ease,
-    //   },
-    // );
-    $.scrollify.enable();
-    $("#project-title-mobile").removeClass('hide');
-    $("#project-title-mobile").addClass('show');
-    $("body").removeClass("overflow-hidden");
-    $("#popup-text").removeClass('text-anim');
-      $("#popup-detail").removeClass('detail-anim');
-      $("#popup-detail-2").removeClass('detail-anim-2');
-      $("#popup-detail-3").removeClass('detail-anim-3');
-     $("#popup-text").removeClass('text-anim');
-     $("#popup").removeClass('popup-in');
-     $("#popup").removeClass('show');
-     $("#popup").addClass('popup-out');
-     $("body").removeClass('position-fixed');
-    //  $("#popup").addClass('circle-out');
-    $("[data-id='bg-image']").removeClass('hide-image');
-    $("[data-id='bg-image']").addClass('show-image');
-     $("#popup").style.display="none";
-     $("body").style.position="relative";
-     console.log('closed');
-     $("#popup").removeClass('show');
-     $("#popup-text").addClass('text-anim-out');
-     $("#popup-detail").addClass('detail-anim-out');
-      $("#popup-detail-2").addClass('detail-anim-out-2');
-      $("#popup-detail-3").addClass('detail-anim-out-3');
-
-   }; 
-   function closemobilepopup2(){
-    $(".mobile-slider").slick("slickSetOption", "accessibility", true);
-   $(".mobile-slider").slick("slickSetOption", "draggable", true);
-   $(".mobile-slider").slick("slickSetOption", "swipe", true);
-   $(".mobile-slider").slick("slickSetOption", "touchMove", true); 
-   $.scrollify.enable();
-  //  console.log( $.scrollify.enable());
-   hold = !hold; 
-   console.log(hold);
-    $("[data-id='mobile-thumb-title']").toggle('show');
-    // $("#project-2").toggle('show');
-     console.log('im closing');
-     $("#popup-mobile2").removeClass('popup-in-mobile');
-     $("#popup-mobile2").addClass('popup-out-mobile');
-     $("body").removeClass("overflow-hidden");
-     $("#popup-text").removeClass('text-anim');
-     $("#popup-detail").removeClass('detail-anim');
-     $("#popup-detail-2").removeClass('detail-anim-2');
-     $("#popup-detail-3").removeClass('detail-anim-3');
-     $("#popup-text").removeClass('text-anim');
-     $("#popup-mobile2").removeClass('show');
-    //  $("#popup-mobile2").addClass('hide');
-    //  $("body").removeClass('position-fixed');
-    $("[data-id='bg-image-mobile2']").addClass('show-image');
-     $("[data-id='bg-image-mobile2']").removeClass('hide-image');
-    //  $("body").css("position","relative");
-     $('body').removeClass('stop-scrolling');
-     $('body').unbind('touchmove')
-
-     console.log('closed');
-     $("#popup-mobile2").removeClass('show');
-     $("#popup-text").addClass('text-anim-out');
-     $("#popup-detail").addClass('detail-anim-out');
-      $("#popup-detail-2").addClass('detail-anim-out-2');
-      $("#popup-detail-3").addClass('detail-anim-out-3');  
-   }; 
-    //this is dummy
-    var modal = document.querySelector("#modal");
-    var modalOverlay = document.querySelector("#modal-overlay");
-    var closeButton = document.querySelector("#close-button");
-    var openButton = document.querySelector("#open-button");
-
-    closeButton.addEventListener("click", function () {
-      // $('#open-button').removeClass('circle-in');
-      $('#open-button').addClass('circle-out');
-      // $('#open-button').addClass('clipped-box');
-      $('#open-button').removeClass('circle-out');
-      // $('.custom-modal-bg').css('position','fixed');
-      modal.classList.toggle("closed");
-    });
-    
-    openButton.addEventListener("click", function () {
-      // $('#open-button').addClass('circle-in');
-      $('#open-button').removeClass('clipped-box');
-      modal.classList.toggle("closed");
-      // $('.custom-modal-bg').addClass('');
-      //  $('.custom-modal-bg').css('overflow','hidden');
-      modalOverlay.classList.toggle("closed");
-      console.log('opened');  
-    });
-
-    $('.carousel-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.carousel-nav'
-});
-$('.carousel-nav').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.carousel-for',
-  dots: false,
-  infinite:true,
-  prevArrow:false,
-  nextArrow:false,
-  centerMode: true,
-  focusOnSelect: true
-});
- 
-    function openModal() {
-      $('#modal-btn').addClass('circle-in');
-      $('#modal-btn').removeClass('clipped-box');
-    };
-    
-  </script>
-  <script src="https://unpkg.com/tilt.js@1.1.19/dest/tilt.jquery.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/essential.js"> </script>
+  <!-- <script src="js/main.js"></script> -->
   <script type="module" src="model.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/css-scroll-snap-polyfill@0.1.2/dist/css-scroll-snap-polyfill.umd.min.js">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/css-scroll-snap-polyfill@0.1.2/dist/css-scroll-snap-polyfill.umd.min.js"> -->
   </script>
 </body>
 
