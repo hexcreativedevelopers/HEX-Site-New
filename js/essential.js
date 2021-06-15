@@ -14,7 +14,15 @@
       title:"Renew Wax",
       description:"Lorem ipsum is my dummy text",
       client:"Renew Wax",
-      type:"client1"
+      type:"FROM | San Thaw Dar"
+    },
+    {
+      id:3,
+      bg_image:"img/bunny-bg.jpg",
+      title:"Some AR game ",
+      description:"Lorem ipsum is my dummy text",
+      client:"Bunny Phyoe",
+      type:"FROM | Bunny Phyoe"
     },  
   ]
           $('body').waitForImages(function() {
@@ -224,10 +232,10 @@
      $("#popup").css("background-image","url("+itemdata[id].bg_image+")");
     //  $("#popup-mobile2").css("background-image","url("+itemdata[id].bg_image+") !important");
     //  $("#popup-mobile2").css("background","#420369");
-    $("#popup-text").text(itemdata[id].title);
-    $("#popup-detail").text(itemdata[id].description);
-    $("#popup-detail-2").text(itemdata[id].client);
-    $("#popup-detail-3").text(itemdata[id].type);
+    $("[data-id='popup-text']").text(itemdata[id].title);
+    $("[data-id='popup-detail']").text(itemdata[id].description);
+    $("[data-id='popup-detail-2']").text(itemdata[id].client);
+    $("[data-id='popup-detail-3']").text(itemdata[id].type);
    };
    function runanimationpc(){
     console.log("opened");
@@ -239,10 +247,10 @@
       $("body").addClass("overflow-hidden");
       
       $("[data-id='bg-image']").addClass('hide-image');
-      $("#popup-text").addClass('text-anim');
-      $("#popup-detail").addClass('detail-anim');
-      $("#popup-detail-2").addClass('detail-anim-2');
-      $("#popup-detail-3").addClass('detail-anim-3');
+      $("[data-id='popup-text']").addClass('text-anim');
+      $("[data-id='popup-detail']").addClass('detail-anim');
+      $("[data-id='popup-detail-2']").addClass('detail-anim-2');
+      $("[data-id='popup-detail-3']").addClass('detail-anim-3');
     //   tl.to(
     //   ".project-image",
     //   0.4,
@@ -323,10 +331,10 @@
     $("#project-title-mobile").removeClass('hide');
     $("#project-title-mobile").addClass('show');
     $("body").removeClass("overflow-hidden");
-    $("#popup-text").removeClass('text-anim');
-      $("#popup-detail").removeClass('detail-anim');
-      $("#popup-detail-2").removeClass('detail-anim-2');
-      $("#popup-detail-3").removeClass('detail-anim-3');
+    $("[data-id='popup-text']").removeClass('text-anim');
+      $("[data-id='popup-detail']").removeClass('detail-anim');
+      $("[data-id='popup-detail-2']").removeClass('detail-anim-2');
+      $("[data-id='popup-detail-3']").removeClass('detail-anim-3');
      $("#popup-text").removeClass('text-anim');
      $("#popup").removeClass('popup-in');
      $("#popup").removeClass('show');
