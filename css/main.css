@@ -474,6 +474,15 @@ border-radius: 10px;
   display:flex;
 
 }
+
+.project-thumb-col{
+  margin-top:40px;top:100px;position:relative;
+}
+@media(max-width:800px){
+  .project-thumb-col{
+    top:150px;
+  }
+}
 @media(max-width:425px){
   .team-slider-pc{
     display:none;
@@ -483,9 +492,7 @@ border-radius: 10px;
     display:block;
   }
 }
-.people-info{
- 
-}
+
 #people-data{
   position: absolute;
   text-align: left;
@@ -544,6 +551,11 @@ border-radius: 10px;
     font-weight:bold;
     font-size:80px;
 
+}
+@media(max-width:800px){
+  .client-title{
+    font-size:50px;
+  }
 }
 .projects-title{
   left:0;
@@ -1560,6 +1572,18 @@ visibility: hidden;
   transition:1s ease-in-out;
   clip-path:circle(11% at  320px 320px);
 }
+
+@media(max-width:800px){
+  .popup-in {
+  
+    clip-path: circle( 110% at  220px 320px);
+  }
+  .popup-out{
+    /* animation:circleout 1.5s; */
+   
+    clip-path:circle(5% at  220px 320px);
+  }
+}
 @media(max-width:425px){
   .popup-in {
   
@@ -1571,6 +1595,7 @@ visibility: hidden;
     clip-path:circle(5% at  50px 420px);
   }
 }
+
 .popup-inner {
   position: relative;
   /* bottom: -100vw;
