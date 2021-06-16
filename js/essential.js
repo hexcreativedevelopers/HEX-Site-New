@@ -166,7 +166,7 @@
       ]
     });
     //for slider mobile 
-    $('.mobile-slider').slick({
+    $('.mobile-slider').not('.slick-initialized').slick({
   centerMode: true,
   centerPadding: "50%",
   slidesToShow: 1,
