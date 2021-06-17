@@ -1914,3 +1914,12 @@ visibility: hidden;
     SECTION - HOME
   ----------*/
   
+  .hybrid-col{
+    height:100vh;
+  }
+
+  @media(max-width:425px){
+    .hybrid-col{
+      height:50vh;
+    }
+  }
