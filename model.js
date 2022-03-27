@@ -160,9 +160,9 @@ function init() {
     objectB = gltf.scene;
    
     objectB.rotation.y = 70;
-    objectB.position.z = 500;
-    objectB.position.x = 2999;
-    objectB.position.y = 80;
+    objectB.position.z = 250;
+    objectB.position.x = 2500;
+    objectB.position.y = -100;
     objectB.scale.set(1.2, 1.2, 1.2);
     objectB.castShadow = false;
     
@@ -241,7 +241,7 @@ function render() {
   hemiLight.color.setHex(hemiColor);
 
   if (scroll > 155) {
-    camera.position.x = THREE.MathUtils.clamp(camera.position.x, scroll * 4.5, 1);
+    camera.position.x = THREE.MathUtils.clamp(camera.position.x, scroll * 3, 1);
   }
 
   camera.position.x += (-mouseX - camera.position.x) * .05;
@@ -253,7 +253,7 @@ function render() {
       camera.lookAt(objectA.position);
     }
     
-  } else if (scroll > 553) {
+  } else if (scroll > 280) {
     camera.lookAt(objectB.position);
 
 
